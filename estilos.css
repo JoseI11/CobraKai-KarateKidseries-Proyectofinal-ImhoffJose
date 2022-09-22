@@ -1,8 +1,165 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(red,black,yellow);
+
+/*body {
+      background-image: linear-gradient(rgba(250, 8, 8, 0.966),rgba(0, 0, 0, 0.658),yellow);
+}*/
+/*********************NAVBAR DE TODOS LOS HTML*********************************************/
+.navbar-brand img {
+    width: 50%;
 }
+
+.menu-bar {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.menu-bar .navbar .navbar-nav .nav-link {
+    font-family: 'Baskervville', serif;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    border-radius: 20%;
+}
+
+.menu-bar .navbar .navbar-nav .nav-link:hover {
+    background-color: red;
+}
+
+.menu-bar .navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: gray;
+    font-family: 'Baskervville', serif;
+    border-radius: 20%;
+}
+
+.menu-bar .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item {
+    color: white;
+    text-align: center;
+}
+
+.menu-bar .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item:hover {
+    background-color: red;
+    border-radius: 20%;
+}
+/******************************************************************************************/
+/***********************MAIN de la pagina Index********************************************/
+main {
+    background-image: linear-gradient(yellow, rgba(0, 0, 0, 0.411));
+}
+.tituloCobra{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cobraKaidojo danielJohnny";
+    
+  }
+.cobraKaidojo{
+    width: 95%;
+    margin-bottom: 50px;
+}
+.danielJohnny{
+    width: 95%;
+    margin-bottom: 50px;
+}
+.cobraKaidojo img{
+    width: 100%;
+
+}
+.danielJohnny img{
+    width: 100%;
+}
+.text-center {
+    background-image: radial-gradient(red, yellow);
+    color: white;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+    font-weight: bold;
+}
+
+i {
+    color: white;
+    font-weight: bold;
+}
+/*************************************************************************************************/
+/***********************MAIN de la pagina cobrakai************************************************/
+/*.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: .5rem
+}
+
+.form button {
+    padding: .5em 1em;
+    border: none;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-element {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+
+}*/
+.card{
+    width: 500px;
+    background-color: #fff;
+	margin: 100px auto 30px auto;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+    position: relative;
+	bottom: 50px;
+    margin-bottom: 0px;
+}
+
+.cobra{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 80%;
+}
+.cobra img{
+    width: 40%;
+    position: relative;
+    left: 42%;
+}
+/**********************************************************************************************/
+
+
+/*footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
