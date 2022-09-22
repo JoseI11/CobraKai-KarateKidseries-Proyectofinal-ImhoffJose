@@ -19,7 +19,7 @@ function primerInterrogante() {
     }
 }
 
-//primerInterrogante();
+primerInterrogante();
 
 function segundoInterrogante() {
     let segundaPregunta=prompt("¿Johnny Lawrence gano 2 veces el torneo de All Valley?. Responde con si o no");
@@ -30,4 +30,4 @@ function segundoInterrogante() {
         alert("Respuesta incorrecta");
     }
 }
-//segundoInterrogante();
+segundoInterrogante();
