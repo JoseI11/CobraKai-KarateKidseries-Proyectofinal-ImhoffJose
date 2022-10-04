@@ -74,6 +74,11 @@ main {
 
             img {
                 width: 100%;
+                &:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                    border: solid black 3px;
+                }
             }
         }
 
@@ -83,10 +88,43 @@ main {
 
             img {
                 width: 100%;
+                &:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                    border: solid black 3px;
+                }
             }
         }
 
 
+    }
+    .tituloClips{
+        display: flex;
+        justify-content: center;
+    }
+    .containerClips{
+        margin: auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "clipstheKarateKid clipsCobraKai";
+        .clipstheKarateKid{
+            width: 95%;
+            margin-bottom: 50px;
+            iframe{
+                width: 100%;
+                height: 320px;
+            }
+        }
+        .clipsCobraKai{
+            width: 95%;
+            margin-bottom: 50px;
+            iframe{
+                width: 100%;
+                height: 320px;
+            }
+        }
     }
 }
 
@@ -121,6 +159,39 @@ main {
             width: 40%;
             position: relative;
             left: 42%;
+        }
+
+    }
+
+    .card {
+        width: 500px;
+        background-color: #fff;
+        margin: 100px auto 30px auto;
+        border-radius: 6px;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 50px;
+        margin-bottom: 0px;
+    }
+
+}
+/*********************************************************************************************/
+/*****************************************Main de la pagina karate kid************************/
+main {
+    .posterKarateKid{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 80%;
+
+        img {
+            width: 80%;
+            position: relative;
+            left: 38%;
         }
 
     }
