@@ -1,4 +1,4 @@
-
+//Array de preguntas y respuestas
 const arrayKarateKidpregunta = [
     {
         pregunta: "¿En que ciudad Daniel y su madre vivian antes de mudarse a la ciudad de Los Angeles?",
@@ -285,6 +285,7 @@ const arrayKarateKidpregunta = [
     }
 ];
 
+//Clase para calcular el puntaje
 class CuestionarioKarateKidCobraKai {
     constructor(nombreJugador, puntaje) {
         this.nombreJugador = nombreJugador;
