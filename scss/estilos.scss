@@ -165,7 +165,7 @@ main {
 
     .card {
         width: 500px;
-        background-color: #fff;
+        background-color: green;
         margin: 100px auto 30px auto;
         border-radius: 6px;
         text-align: center;
@@ -195,7 +195,18 @@ main {
         }
 
     }
-
+    #opciones{
+        display: flex;
+        justify-content: center;
+    }
+    #panel{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorOpciones{
+        display: flex;
+        justify-content: center;
+    }
     .card {
         width: 500px;
         background-color: #fff;
@@ -206,6 +217,7 @@ main {
         position: relative;
         bottom: 50px;
         margin-bottom: 0px;
+        
     }
 
 }

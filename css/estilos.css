@@ -111,7 +111,7 @@ main .cobra {
 
 main .card {
   width: 500px;
-  background-color: #fff;
+  background-color: green;
   margin: 100px auto 30px auto;
   border-radius: 6px;
   text-align: center;
@@ -134,6 +134,18 @@ main .posterKarateKid {
     width: 80%;
     position: relative;
     left: 38%; }
+
+main #opciones {
+  display: flex;
+  justify-content: center; }
+
+main #panel {
+  display: flex;
+  justify-content: center; }
+
+main .contenedorOpciones {
+  display: flex;
+  justify-content: center; }
 
 main .card {
   width: 500px;

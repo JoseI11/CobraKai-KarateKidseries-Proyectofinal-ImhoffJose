@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Document</title>
-    </head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="stylesheet" href="../css/estilos.css">
+<title>Document</title>
+</head>
 
-    <body>
-        <div class="menu-bar">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand"><img src="../media/Logo-CobraKai-KarateKidseries.webp"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item fs-5">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown fs-5">
+<body>
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="../media/Logo-CobraKai-KarateKidseries.webp"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item fs-5">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link active" aria-current="page" href="#">Trivia</a>
+                        </li>
+                        <!--<li class="nav-item dropdown fs-5">
                                 <a class="nav-link dropdown-toggle " href="" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Trivias
@@ -42,65 +45,104 @@
 
                             <li class="nav-item fs-5">
                                 <a class="nav-link " href="">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                            </li>-->
+                    </ul>
                 </div>
-            </nav>
-        </div>
-        <main>
-            <div class="posterKarateKid">
-                <a><img src="../media/karate-kid-momento-verdad.webp" alt=""></a>
             </div>
+        </nav>
+    </div>
+    <main>
+      <!--  <h1 id="title">hola mundo</h1>-->
+        <div class="posterKarateKid">
+            <a><img src="../media/karate-kid-momento-verdad.webp" alt=""></a>
+        </div>
+
+        <h2 id="opciones">Elige la trivia que quieres jugar</h2>
+
+        <div id="panel">
+
+        </div>
+        <div class="contenedorOpciones" id="contenedor">
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioKarateKid"
+                    value="Karate Kid">
+                <label class="form-check-label" for="radioKarateKid">Karate Kid</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioKarateKidII"
+                    value="Karate Kid II">
+                <label class="form-check-label" for="radioKarateKidII">Karate Kid II</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioKarateKidIII"
+                    value="Karate Kid III">
+                <label class="form-check-label" for="radioKarateKidIII">Karate Kid III</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioCobraKai"
+                    value="Cobra Kai">
+                <label class="form-check-label" for="radioCobraKai">Cobra Kai</label>
+            </div>
+        </div>
+        <div id="panelPreguntas">
             <div class="card">
-                <p>¿Listo para comenzar?</p>
+                <p id="titulo">¿Listo para comenzar?</p>
 
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" id="opcionA">
                         Opcion 1
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2" id="opcionB">
                         Opcion 2
                     </label>
                 </div>
-                <button class="start">Comenzar</button>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
+                    <label class="form-check-label" for="flexRadioDefault3" id="opcionC">
+                        Opcion 3
+                    </label>
+                </div>
+                <button type="button" id="comenzarJuego" class="start">Comenzar</button>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer class="text-center text-lg-start text-muted">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Siguenos en:</span>
             </div>
 
-        </main>
-        <footer class="text-center text-lg-start text-muted">
-
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-
-                <div class="me-5 d-none d-lg-block">
-                    <span>Siguenos en:</span>
-                </div>
-
-                <div>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="me-4 link-secondary">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-
-            </section>
-
-            <div class="text-center p-4">
-                © 2022 Copyright:
+            <div>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-            crossorigin="anonymous"></script>
-        <script src="../js/karatekid.js"></script>
-    </body>
+
+        </section>
+
+        <div class="text-center p-4">
+            © 2022 Copyright:
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="../js/karatekid.js"></script>
+</body>
 
 </html>
