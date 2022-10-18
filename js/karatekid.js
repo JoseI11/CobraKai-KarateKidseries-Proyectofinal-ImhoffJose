@@ -1,5 +1,4 @@
 
-
 //Array de preguntas y respuestas
 const arrayKarateKidpregunta = [
     {
@@ -7,7 +6,7 @@ const arrayKarateKidpregunta = [
         a: "Boston",
         b: "Newark",
         c: "Orlando",
-        correcta:"b",
+        correcta: "b",
         orden: 1,
         saga: "Karate Kid"
     },
@@ -16,7 +15,7 @@ const arrayKarateKidpregunta = [
         a: "Porque debían dinero y tenian que irse de la ciudad",
         b: "Porque tenian familia alli y querian vivir cerca de ellos",
         c: "Porque la madre de Daniel habia conseguido trabajo alli",
-        correcta:"c",
+        correcta: "c",
         orden: 2,
         saga: "Karate Kid"
     },
@@ -25,7 +24,7 @@ const arrayKarateKidpregunta = [
         a: "En un bar",
         b: "En el parque de diversiones",
         c: "En una fiesta en la playa",
-        correcta:"c",
+        correcta: "c",
         orden: 3,
         saga: "Karate Kid"
     },
@@ -34,7 +33,7 @@ const arrayKarateKidpregunta = [
         a: "Eric,Thomas,Craig,Spencer",
         b: "Tommy, Jimmy, Dutch, Bobby",
         c: "Alex, Rick, Joseph, Henry",
-        correcta:"b",
+        correcta: "b",
         orden: 4,
         saga: "Karate Kid"
     },
@@ -43,7 +42,7 @@ const arrayKarateKidpregunta = [
         a: "Porque Johnny y sus amigos pertenecían a el",
         b: "Porque vivía muy lejos del dojo",
         c: "Por el costo que debía pagar por mes",
-        correcta:"a",
+        correcta: "a",
         orden: 5,
         saga: "Karate Kid"
     },
@@ -52,7 +51,7 @@ const arrayKarateKidpregunta = [
         a: "Tolerar a los demás , Respetar a los demás e Igualdad",
         b: "Responsabilidad, Orden, Perseverancia",
         c: "Golpear primero, Golpear duro, Sin piedad",
-        correcta:"c",
+        correcta: "c",
         orden: 6,
         saga: "Karate Kid"
     },
@@ -61,7 +60,7 @@ const arrayKarateKidpregunta = [
         a: "Su padre",
         b: "Su hermano mayor",
         c: "Su abuelo",
-        correcta:"a",
+        correcta: "a",
         orden: 7,
         saga: "Karate Kid"
     },
@@ -70,7 +69,7 @@ const arrayKarateKidpregunta = [
         a: "Golpear duro, Golpear primero",
         b: "El Karate es solo para la defensa, primero aprender la regla anterior",
         c: "Respetar a tu oponente, Trabajar duro",
-        correcta:"b",
+        correcta: "b",
         orden: 8,
         saga: "Karate Kid"
     },
@@ -79,7 +78,7 @@ const arrayKarateKidpregunta = [
         a: "Comprender la filosofía del mismo",
         b: "Agregar cera con mano derecha, quitar cera con mano izquierda",
         c: "Concentrarse en la potencia y velocidad de uno mismo",
-        correcta:"b",
+        correcta: "b",
         orden: 9,
         saga: "Karate Kid"
     },
@@ -88,7 +87,7 @@ const arrayKarateKidpregunta = [
         a: "Que debia atacar la pierna que uno de sus amigos había dañado en el combate anterior",
         b: "Que debia concentrarse en el combate",
         c: "Que debia no escuchar los abucheos que recibia",
-        correcta:"a",
+        correcta: "a",
         orden: 10,
         saga: "Karate Kid"
     },
@@ -97,7 +96,7 @@ const arrayKarateKidpregunta = [
         a: "Patada de la grulla",
         b: "Patada frontal",
         c: "Golpe descendente con el talon",
-        correcta:"a",
+        correcta: "a",
         orden: 11,
         saga: "Karate Kid"
     },
@@ -106,7 +105,7 @@ const arrayKarateKidpregunta = [
         a: "Okada",
         b: "Yamamoto",
         c: "Miyagi",
-        correcta:"c",
+        correcta: "c",
         orden: 12,
         saga: "Karate Kid"
     },
@@ -115,7 +114,7 @@ const arrayKarateKidpregunta = [
         a: "Little Tokio",
         b: "Golf N Stuff",
         c: "Oue Skyspace",
-        correcta:"b",
+        correcta: "b",
         orden: 13,
         saga: "Karate Kid"
     },
@@ -124,7 +123,7 @@ const arrayKarateKidpregunta = [
         a: "1",
         b: "3",
         c: "5",
-        correcta:"a",
+        correcta: "a",
         orden: 14,
         saga: "Karate Kid"
     },
@@ -133,7 +132,7 @@ const arrayKarateKidpregunta = [
         a: "Motocicleta",
         b: "Auto",
         c: "Bicicleta",
-        correcta:"c",
+        correcta: "c",
         orden: 15,
         saga: "Karate Kid"
     },
@@ -144,7 +143,7 @@ const arrayKarateKidpregunta = [
         a: "Que había heredado una fortuna de su abuelo",
         b: "Que debía más seguido a su madre",
         c: "Que su padre estaba terminalmente enfermo",
-        correcta:"c",
+        correcta: "c",
         orden: 16,
         saga: "Karate Kid II"
     },
@@ -153,7 +152,7 @@ const arrayKarateKidpregunta = [
         a: "Tokio",
         b: "Osaka",
         c: "Okinawa",
-        correcta:"c",
+        correcta: "c",
         orden: 17,
         saga: "Karate Kid II"
     },
@@ -162,7 +161,7 @@ const arrayKarateKidpregunta = [
         a: "Debido a que debía mucho dinero y lo estaban persiguiendo",
         b: "Porque se enamoro de una mujer la cual tenía un matrimonio arreglado con su mejor amigo, por lo cual su mejor amigo lo desafió a un duelo a muerte y debido a ese motivo decidió irse de Japón",
         c: "Porque había perdido una pelea en donde el perdedor debía abandonar Japón",
-        correcta:"b",
+        correcta: "b",
         orden: 18,
         saga: "Karate Kid II"
 
@@ -172,7 +171,7 @@ const arrayKarateKidpregunta = [
         a: "Sato",
         b: "Yukie",
         c: "Chozen",
-        correcta:"c",
+        correcta: "c",
         orden: 19,
         saga: "Karate Kid II"
     },
@@ -181,7 +180,7 @@ const arrayKarateKidpregunta = [
         a: "Ambos eran amigos muy cercanos",
         b: "Ambos eran vecinos",
         c: "Ambos eran amigos y estudiantes de karate en donde el padre del señor Miyagi era el maestro",
-        correcta:"c",
+        correcta: "c",
         orden: 20,
         saga: "Karate Kid II"
 
@@ -191,7 +190,7 @@ const arrayKarateKidpregunta = [
         a: "Chozen y Sato",
         b: "Yuki y su nieta Kumiko",
         c: "La madre del señor Miyagi",
-        correcta:"b",
+        correcta: "b",
         orden: 21,
         saga: "Karate Kid II"
     },
@@ -200,7 +199,7 @@ const arrayKarateKidpregunta = [
         a: "Koto (una clase de citara japonesa)",
         b: "Shakuhachi (una flauta de bambu proveniente de China)",
         c: "Den-den daiko (una clase de tambor japones)",
-        correcta:"c",
+        correcta: "c",
         orden: 22,
         saga: "Karate Kid II"
     },
@@ -209,7 +208,7 @@ const arrayKarateKidpregunta = [
         a: "Porque Daniel estaba con Kumiko y Chozen estaba enamorado de ella",
         b: "Porque Daniel lo había insultado",
         c: "Porque Daniel había desenmascarado la estafa que Chozen y sus amigos le estaban haciendo a los habitantes de la aldea Tomi",
-        correcta:"c",
+        correcta: "c",
         orden: 23,
         saga: "Karate Kid II"
 
@@ -219,7 +218,7 @@ const arrayKarateKidpregunta = [
         a: "Seis tablas",
         b: "Una tabla",
         c: "Tres tablas",
-        correcta:"a",
+        correcta: "a",
         orden: 24,
         saga: "Karate Kid II"
 
@@ -229,7 +228,7 @@ const arrayKarateKidpregunta = [
         a: "600 dólares",
         b: "100 dólares",
         c: "1000 dólares",
-        correcta:"a",
+        correcta: "a",
         orden: 25,
         saga: "Karate Kid II"
 
@@ -239,7 +238,7 @@ const arrayKarateKidpregunta = [
         a: "Un anciano",
         b: "Una niña",
         c: "Una mujer",
-        correcta:"b",
+        correcta: "b",
         orden: 26,
         saga: "Karate Kid II"
     },
@@ -248,7 +247,7 @@ const arrayKarateKidpregunta = [
         a: "Ahora para ti, yo estoy muerto",
         b: "Debes pensar en el otro",
         c: "Debiste ayudarlo sin importar nada",
-        correcta:"a",
+        correcta: "a",
         orden: 27,
         saga: "Karate Kid II"
 
@@ -258,7 +257,7 @@ const arrayKarateKidpregunta = [
         a: "Decidió irse de la aldea",
         b: "Reto al señor Miyagi nuevamente a una pelea",
         c: "Decidio ayudar a reconstruir la aldea, y luego pidió perdón a Miyagi por la disputa que había creado entre ellos",
-        correcta:"c",
+        correcta: "c",
         orden: 28,
         saga: "Karate Kid II"
     },
@@ -267,7 +266,7 @@ const arrayKarateKidpregunta = [
         a: "Por el honor",
         b: "Porque ambos se odiaban a muerte",
         c: "Para evitar que Chozen mate a Kumiko si no peleaban",
-        correcta:"c",
+        correcta: "c",
         orden: 29,
         saga: "Karate Kid II"
     },
@@ -276,7 +275,7 @@ const arrayKarateKidpregunta = [
         a: "La patada de la grulla",
         b: "Patada frontal",
         c: "La técnica del tambor",
-        correcta:"c",
+        correcta: "c",
         orden: 30,
         saga: "Karate Kid II"
 
@@ -287,7 +286,7 @@ const arrayKarateKidpregunta = [
         a: "Que el sensei debia haber discutido con sus alumnos lo sucedido en su dojo",
         b: "Que el sensei debió haberles hablado a sus alumnos con una mejor disposición para que estos pudieran comprender los errores que cometieron el torneo",
         c: "Que una persona que no perdona, el vivir es peor castigo que la muerte",
-        correcta:"c",
+        correcta: "c",
         orden: 31,
         saga: "Karate Kid III"
     },
@@ -296,7 +295,7 @@ const arrayKarateKidpregunta = [
         a: "1967-1969",
         b: "1970-1972",
         c: "1980-1982",
-        correcta:"b",
+        correcta: "b",
         orden: 32,
         saga: "Karate Kid III"
     },
@@ -305,7 +304,7 @@ const arrayKarateKidpregunta = [
         a: "Jordan Miles",
         b: "Paul Phoenix",
         c: "Terry Silver",
-        correcta:"c",
+        correcta: "c",
         orden: 33,
         saga: "Karate Kid III"
     },
@@ -315,7 +314,7 @@ const arrayKarateKidpregunta = [
         a: "Hawai",
         b: "Tahiti",
         c: "Borneo",
-        correcta:"b",
+        correcta: "b",
         orden: 34,
         saga: "Karate Kid III"
     },
@@ -324,7 +323,7 @@ const arrayKarateKidpregunta = [
         a: "Lo uso para inscribirse en la universidad",
         b: "Lo uso para comprar el alquiler de un local para vender bonsais",
         c: "Lo decidio guardar para un automovil",
-        correcta:"b",
+        correcta: "b",
         orden: 35,
         saga: "Karate Kid III"
     },
@@ -333,7 +332,7 @@ const arrayKarateKidpregunta = [
         a: "Contratar sicarios para que los mataran",
         b: "Hacer que los secuestren y torturarlos el mismo",
         c: "Hacer que Daniel sienta dolor y miedo y de esta manera hacer sufrir a Miyagi",
-        correcta:"c",
+        correcta: "c",
         orden: 36,
         saga: "Karate Kid III"
     },
@@ -342,7 +341,7 @@ const arrayKarateKidpregunta = [
         a: "Ace Degenerate",
         b: "The Invincible Dragon",
         c: "Karate's Bad Boy",
-        correcta:"c",
+        correcta: "c",
         orden: 37,
         saga: "Karate Kid III"
     },
@@ -351,7 +350,7 @@ const arrayKarateKidpregunta = [
         a: "Jhun Hoon",
         b: "Kim Kapwhan",
         c: "Kim Sun-Yung",
-        correcta:"c",
+        correcta: "c",
         orden: 38,
         saga: "Karate Kid III"
     },
@@ -360,7 +359,7 @@ const arrayKarateKidpregunta = [
         a: "Gran cañon",
         b: "Caldero del diablo",
         c: "Tundra espesa",
-        correcta:"b",
+        correcta: "b",
         orden: 39,
         saga: "Karate Kid III"
     },
@@ -369,7 +368,7 @@ const arrayKarateKidpregunta = [
         a: "Ali",
         b: "Jessica",
         c: "Kumiko",
-        correcta:"b",
+        correcta: "b",
         orden: 40,
         saga: "Karate Kid III"
 
@@ -379,17 +378,17 @@ const arrayKarateKidpregunta = [
         a: "70%",
         b: "50%",
         c: "25%",
-        correcta:"b",
+        correcta: "b",
         orden: 41,
         saga: "Karate Kid III"
     },
- 
+
     {
         pregunta: "¿Cual fue la razón por la cual Daniel comienza a entrenar en el dojo de Cobra Kai?",
         a: "Debido a que necesitaba aprender a atacar",
         b: "Porque Miyagi habia decidido no entrenarlo para el torneo",
         c: "Porque Silver lo invito a unirse",
-        correcta:"b",
+        correcta: "b",
         orden: 42,
         saga: "Karate Kid III"
     },
@@ -398,7 +397,7 @@ const arrayKarateKidpregunta = [
         a: "Golpear primero, Golpear fuerte, Sin piedad",
         b: "Analizar al oponente, planear una estrategia y atacar con seguridad",
         c: "Un hombre que no puede mantenerse de pie no puede pelear, un hombre que no puede respirar no puede pelear,un hombre que no puede ver no puede pelear",
-        correcta:"c",
+        correcta: "c",
 
         orden: 43,
         saga: "Karate Kid III"
@@ -408,7 +407,7 @@ const arrayKarateKidpregunta = [
         a: "Porque Daniel se lo pidio hasta el cansancio",
         b: "Porque que Daniel defendiera su titulo de campeon",
         c: "Debido a que pudo conocer el plan de Silver de crear una grieta entre la relación entre el y Daniel y de esta manera poder reparar la misma",
-        correcta:"c",
+        correcta: "c",
         orden: 44,
         saga: "Karate Kid III"
     },
@@ -417,13 +416,14 @@ const arrayKarateKidpregunta = [
         a: "Este no es el final, no debes rendirte",
         b: "Permanece centrado, tu mejor karate esta dentro tuyo, ahora dejalo salir",
         c: "Debes seguir luchando, no dejes que el oponente la misma",
-        correcta:"b",
+        correcta: "b",
         orden: 45,
         saga: "Karate Kid III"
     },
 
 
 ];
+
 /////////////////Primera temporada/////////////
 const arrayCobraKai = [
     {
@@ -601,19 +601,25 @@ let pregunta;
 let respuestaA;
 let respuestaB;
 let respuestaC;
-var saga = " ";
+let saga = " ";
 let nuevoArray = [];
+let arrayDesordenado = [];
 
 //Clase para calcular el puntaje
 class CuestionarioKarateKidCobraKai {
-    constructor(nombreJugador, puntaje) {
+    /*constructor(nombreJugador, puntaje) {
         this.nombreJugador = nombreJugador;
         this.puntaje = puntaje;
+    }*/
+    constructor(puntaje) {
+        this.puntaje = puntaje;
+
     }
+
     calcularPuntaje = () => {
 
         this.puntaje++;
-        alert(`el puntaje es de ${this.puntaje}`)
+        /*alert(`el puntaje es de ${this.puntaje}`);*/
         return this.puntaje;
     }
 }
@@ -660,6 +666,7 @@ opcionKarateKid.addEventListener("click", (e) => {
 });
 //hacer funcion que me permita tomar la saga karate kid o karate kid 2 y que despues me lo filtre al array por esa saga
 let valor = 0;
+
 opcionKarateKidII.addEventListener("click", (e) => {
 
     //console.log(e.target)
@@ -669,33 +676,24 @@ opcionKarateKidII.addEventListener("click", (e) => {
     let sagas = e.target.value
     filtrarPreguntas(sagas);
     ///////con esto agrego los elementos html en el lugar que quiero
-    do {
-        let titulos = document.createElement("h2");
-        titulos.setAttribute("id", "nuevoElemento");
-        titulos.innerHTML = "Se agrego correctamente";
-        let preguntaPanel = document.getElementById("panelPreguntas");
-        let nuevocontenedor = document.querySelector(".card");
-        nuevocontenedor.style.display = 'none';
-        titulos.classList.add('d-flex', 'justify-content-center', 'mb-0');
-        preguntaPanel.append(titulos);
-        valor++;
-    } while (valor > 1)
+    /* do {
+         let titulos = document.createElement("h2");
+         titulos.setAttribute("id", "nuevoElemento");
+         titulos.innerHTML = "Se agrego correctamente";
+         let preguntaPanel = document.getElementById("panelPreguntas");
+         let nuevocontenedor = document.querySelector(".card");
+         nuevocontenedor.style.display = 'none';
+         titulos.classList.add('d-flex', 'justify-content-center', 'mb-0');
+         preguntaPanel.append(titulos);
+         valor++;
+     } while (valor > 1)*/
 
     ///////////////////////////////////////////////
     /*nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga.toLowerCase() === "Karate Kid II".toLowerCase());*/
     /*let imagen = document.querySelector(".card");
     imagen.style.display='none';*/
 
-    /*pregunta=document.getElementById("titulo");
-    respuestaA=document.getElementById("opcionA");
-    respuestaB=document.getElementById("opcionB");
-    respuestaC=document.getElementById("opcionC");
-    comenzar=document.getElementById("comenzarJuego");
-    pregunta.innerText= "¿Cual fue la técnica con la cual Daniel derrota a Chozen?";
-    respuestaA.innerText="La patada de la grulla"
-    respuestaB.innerText= "Patada frontal";
-    respuestaC.innerText= "La técnica del tambor";
-    comenzar.innerText="Siguiente pregunta";*/
+
 
 });
 // lo voy a utilizar para ocultar elementos
@@ -715,16 +713,27 @@ function filtrarPreguntas(saga) {
     if (saga == "Karate Kid") {
         nuevoArray = [];
         nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga == "Karate Kid");
-        console.log(arrayPreguntas(nuevoArray));
+        arrayDesordenado = arrayPreguntas(nuevoArray)
+        /*localStorage.setItem("Karate Kid",JSON.stringify(arrayDesordenado));
+        console.log(localStorage.key(0))*/
+        localStorage.setItem("Jose",0);
+        let valor=parseInt(localStorage.getItem("Jose")) + 1;
+        console.log(valor);
+       // localStorage.removeItem("Jose")
+        localStorage.setItem("Jose",valor);
+
+        
 
     } else if (saga == "Karate Kid II") {
         nuevoArray = [];
         nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga == "Karate Kid II");
         console.log(arrayPreguntas(nuevoArray));
+        arrayDesordenado = arrayPreguntas(nuevoArray)
     } else if (saga == "Karate Kid III") {
         nuevoArray = [];
         nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga == "Karate Kid III");
         console.log(arrayPreguntas(nuevoArray));
+        arrayDesordenado = arrayPreguntas(nuevoArray)
     }
 
 }
@@ -746,6 +755,7 @@ let ocultarPanel = () => {
 let titulos;
 let nuevoPanelpreguntas;
 let botonSiguientepregunta;
+let preguntaTitulo;
 let div1;
 let radio1;
 let label1;
@@ -755,6 +765,8 @@ let label2;
 let div3;
 let radio3;
 let label3;
+let contPregunta = 0;
+
 ///////////////////////////////////////////
 ocultarPanel();
 let botonInicio = () => {
@@ -762,104 +774,248 @@ let botonInicio = () => {
     titulos.setAttribute("id", "nuevoBoton");
     titulos.innerHTML = "Se agrego correctamente";
     let botonInicio = document.getElementById("panelPreguntas");
-    titulos.classList.add('d-flex', 'justify-content-center', 'mb-4','mt-4', 'start');
+    titulos.classList.add('d-flex', 'justify-content-center', 'mb-4', 'mt-4', 'start',"colorBoton");
     botonInicio.classList.add('d-flex', 'justify-content-center', 'mb-0');
     botonInicio.append(titulos);
 }
 botonInicio();
+////////Funcion para crear el panel de preguntas(titulo de pregunta,radios de respuesta y boton de confirmacion)
 
-let crearPanelpreguntas = (boton, panelPadre) => {
+let crearPanelpreguntas = (boton, panelPadre, jugador1) => {
     /*let panelPadre=document.getElementById("panelPreguntas");*/
     panelPadre.removeChild(boton);
     nuevoPanelpreguntas = document.createElement("DIV");
     nuevoPanelpreguntas.setAttribute("id", "preguntas");
     nuevoPanelpreguntas.classList.add('card');
     panelPadre.append(nuevoPanelpreguntas);
+    preguntaTitulo = document.createElement("p")
+    preguntaTitulo.setAttribute("id", "titulo");
+    nuevoPanelpreguntas.append(preguntaTitulo);
+
+
 
     for (j = 0; j < 3; j++) {
-        switch (j) {
-            case 0:
-                div1 = document.createElement("DIV");
-                div1.classList.add("form-check")
-                nuevoPanelpreguntas.append(div1);
-                radio1 = document.createElement("input");
-                radio1.setAttribute("id", "opcion1");
-                radio1.setAttribute("type", "radio");
-                radio1.setAttribute("name", "flexRadioDefault");
-                radio1.setAttribute("value","a");
-                radio1.classList.add("form-check-input");
-                div1.append(radio1);
-                label1 = document.createElement("label");
-                label1.setAttribute("id", "opcionA")
-                label1.classList.add("form-check-label");
-                div1.append(label1);
 
-                break;
-            case 1:
-                div2 = document.createElement("DIV");
-                div2.classList.add("form-check")
-                nuevoPanelpreguntas.append(div2);
-                radio2 = document.createElement("input");
-                radio2.setAttribute("id", "opcion2");
-                radio2.setAttribute("type", "radio");
-                radio2.setAttribute("name", "flexRadioDefault");
-                radio2.setAttribute("value","b");
-                radio2.classList.add("form-check-input");
-                div2.append(radio2);
-                label2 = document.createElement("label");
-                label2.setAttribute("id", "opcionB")
-                label2.classList.add("form-check-label");
-                div2.append(label2);
-                break;
-            case 2:
-                div3 = document.createElement("DIV");
-                div3.classList.add("form-check")
-                nuevoPanelpreguntas.append(div3);
-                radio3 = document.createElement("input");
-                radio3.setAttribute("id", "opcion3");
-                radio3.setAttribute("type", "radio");
-                radio3.setAttribute("name", "flexRadioDefault");
-                radio3.setAttribute("value","c");
-                radio3.classList.add("form-check-input");
-                div3.append(radio3);
-                label3 = document.createElement("label");
-                label3.setAttribute("id", "opcionC")
-                label3.classList.add("form-check-label");
-                div3.append(label3);
-                break;
-            default:
-                break;
-        }
+
+         switch (j) {
+             case 0:
+                 div1 = document.createElement("DIV");
+                 div1.classList.add("form-check")
+                 nuevoPanelpreguntas.append(div1);
+                 radio1 = document.createElement("input");
+                 radio1.setAttribute("id", "opcion1");
+                 radio1.setAttribute("type", "radio");
+                 radio1.setAttribute("name", "flexRadioDefault");
+                 radio1.setAttribute("value", "a");
+                 radio1.classList.add("form-check-input");
+                 div1.append(radio1);
+                 label1 = document.createElement("label");
+                 label1.setAttribute("id", "opcionA")
+                 label1.classList.add("form-check-label");
+                 div1.append(label1);
+ 
+                 break;
+             case 1:
+                 div2 = document.createElement("DIV");
+                 div2.classList.add("form-check")
+                 nuevoPanelpreguntas.append(div2);
+                 radio2 = document.createElement("input");
+                 radio2.setAttribute("id", "opcion2");
+                 radio2.setAttribute("type", "radio");
+                 radio2.setAttribute("name", "flexRadioDefault");
+                 radio2.setAttribute("value", "b");
+                 radio2.classList.add("form-check-input");
+                 div2.append(radio2);
+                 label2 = document.createElement("label");
+                 label2.setAttribute("id", "opcionB")
+                 label2.classList.add("form-check-label");
+                 div2.append(label2);
+                 break;
+             case 2:
+                 div3 = document.createElement("DIV");
+                 div3.classList.add("form-check")
+                 nuevoPanelpreguntas.append(div3);
+                 radio3 = document.createElement("input");
+                 radio3.setAttribute("id", "opcion3");
+                 radio3.setAttribute("type", "radio");
+                 radio3.setAttribute("name", "flexRadioDefault");
+                 radio3.setAttribute("value", "c");
+                 radio3.classList.add("form-check-input");
+                 div3.append(radio3);
+                 label3 = document.createElement("label");
+                 label3.setAttribute("id", "opcionC")
+                 label3.classList.add("form-check-label");
+                 div3.append(label3);
+                 break;
+             default:
+                 break;
+         }
 
     }
-    /*botonSiguientepregunta = document.createElement("button");
-    botonSiguientepregunta.setAttribute("type", "button");
-    botonSiguientepregunta.setAttribute("id", "comenzarJuego");
-    botonSiguientepregunta.classList.add("start");
-    botonSiguientepregunta.innerText = "Siguiente Pregunta";
-    nuevoPanelpreguntas.append(botonSiguientepregunta);*/
-    crearbotonSiguientepregunta(botonSiguientepregunta,nuevoPanelpreguntas);
+
+
+    let boton1 = crearbotonSiguientepregunta(botonSiguientepregunta, nuevoPanelpreguntas);
+    console.log(radio1);
+    console.log(radio2);
+    console.log(radio3);
+    /*let opcionSeleccionada = devolverOpcionseleccionada(radio1, radio2, radio3)
+    console.log(opcionSeleccionada + "" + "abfdfdsf")*/
+    console.log(jugador1);
+    funcionAvancepreguntas(boton1, jugador1);
+
 }
-let crearbotonSiguientepregunta=(boton,panel)=>{
+function unselect() {
+    document.querySelectorAll('[name=flexRadioDefault]').forEach((x) => x.checked = false);
+}
+const devolverOpcionseleccionada = (radioOpcion1, radioOpcion2, radioOpcion3) => {
+    radioOpcion1.addEventListener("click", (e) => {
+
+        return e.target.value;
+    })
+    radioOpcion2.addEventListener("click", (e) => {
+        return e.target.value;
+    })
+    radioOpcion3.addEventListener("click", (e) => {
+        return e.target.value;
+    })
+}
+const funcionAvancepreguntas = (boton1, jugadorNuevo) => {
+    let prueba;
+    let resultadoFinal1 = 0;
+
+
+    boton1.addEventListener("click", () => {
+        if (document.querySelector('input[id="opcion1"]:checked')) {
+            prueba = "a";
+        } else if (document.querySelector('input[id="opcion2"]:checked')) {
+            prueba = "b";
+        } else if (document.querySelector('input[id="opcion3"]:checked')) {
+            prueba = "c";
+        }
+
+        //console.log(prueba + "gh");
+        //  console.log(jugadorNuevo.puntaje);
+
+        if (contPregunta == 0) {
+            console.log(arrayDesordenado[contPregunta].correcta + "bn");
+
+            if (arrayDesordenado[contPregunta].correcta == prueba) {
+                resultadoFinal1 = jugadorNuevo.calcularPuntaje();
+                console.log(resultadoFinal1);
+
+            }
+            preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
+            label1.innerText = arrayDesordenado[contPregunta].a
+            label2.innerText = arrayDesordenado[contPregunta].b
+            label3.innerText = arrayDesordenado[contPregunta].c
+
+        }
+        if (contPregunta <= 14 && contPregunta != 0) {
+
+            if (document.querySelector('input[id="opcion1"]:checked')) {
+                prueba = "a";
+            } else if (document.querySelector('input[id="opcion2"]:checked')) {
+                prueba = "b";
+            } else if (document.querySelector('input[id="opcion3"]:checked')) {
+                prueba = "c";
+            }
+            console.log(arrayDesordenado[contPregunta].correcta + "bnc");
+            console.log(prueba + "2");
+            if (arrayDesordenado[contPregunta].correcta == prueba) {
+                console.log(resultadoFinal1);
+                resultadoFinal1 = jugadorNuevo.calcularPuntaje();
+                /*console.log(resultadoFinal1+"a");*/
+            }
+            /*console.log(contPregunta);*/
+            /*preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
+            label1.innerText = arrayDesordenado[contPregunta].a
+            label2.innerText = arrayDesordenado[contPregunta].b
+            label3.innerText = arrayDesordenado[contPregunta].c*/
+            /*else{
+                preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
+                label1.innerText = arrayDesordenado[contPregunta].a
+                label2.innerText = arrayDesordenado[contPregunta].b
+                label3.innerText = arrayDesordenado[contPregunta].c
+                contPregunta++;
+            }*/
+
+
+
+        }
+        //hacer control con if para evitar que cuando el contPregunta llegue a 14 no sume mas debido a que el array de preguntas se acabo
+        if (contPregunta != 14) {
+            contPregunta++;
+            preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
+            label1.innerText = arrayDesordenado[contPregunta].a
+            label2.innerText = arrayDesordenado[contPregunta].b
+            label3.innerText = arrayDesordenado[contPregunta].c
+            unselect();
+        } else {
+            alert(`Tu puntaje es de: ${resultadoFinal1}`)
+        }
+        //contPregunta++;
+
+
+    });
+}
+let jugadores;
+titulos.addEventListener("click", (e) => {
+    document.getElementById("opciones").style.display = 'none';
+    document.getElementById("contenedor").style.display = 'none';
+
+    if (document.querySelector('input[id="radioKarateKidII"]:checked') || document.querySelector('input[id="radioKarateKid"]:checked') || document.querySelector('input[id="radioKarateKidIII"]:checked')) {
+
+
+        filtrarPreguntas();
+        // console.log(nuevoArray);
+        let panel = document.getElementById("panelPreguntas");
+
+        let boton = document.getElementById("nuevoBoton");
+
+        jugadores = new CuestionarioKarateKidCobraKai(0);
+        // console.log(jugadores);
+        crearPanelpreguntas(boton, panel, jugadores);
+
+        preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta
+        label1.innerText = nuevoArray[contPregunta].a
+        label2.innerText = nuevoArray[contPregunta].b
+        label3.innerText = nuevoArray[contPregunta].c
+        nuevoArray
+
+
+    } else {
+
+
+        $(document).ready(function () {
+            $("#ejemplo").modal('show')
+        })
+
+        /*alert("Debe seleccionar una opción");*/
+
+        /*radio1.addEventListener("click", (e) => {
+            console.log(e.target.value);
+        })*/
+    }
+
+})
+let crearbotonSiguientepregunta = (boton, panel) => {
     boton = document.createElement("button");
     boton.setAttribute("type", "button");
     boton.setAttribute("id", "comenzarJuego");
     boton.classList.add("start");
     boton.innerText = "Siguiente Pregunta";
     panel.append(boton);
+    return boton;
 }
-titulos.addEventListener("click", (e) => {
-    let panel = document.getElementById("panelPreguntas");
 
-    let boton = document.getElementById("nuevoBoton");
-    crearPanelpreguntas(boton, panel);
-    radio1.addEventListener("click", (e) => {
-        console.log(e.target.id);
-    })
-})
+
+const evaluarRespuesta = (respuestaA, respuestaB, respuestaC, array) => {
+
+
+}
 //hacer una funcion agregandole a cada input de los radios de respuesta un value con la letra (a,b,c) para compararlo con una propiedad llamada correcta en cada objeto del array de preguntas y respuestas de karate kid
 
-//comienzaJuego();
+
 
 
 

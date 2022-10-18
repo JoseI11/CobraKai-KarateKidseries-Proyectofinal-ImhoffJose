@@ -96,29 +96,30 @@ main {
 
 /*************************************************************************************************/
 /***********************MAIN de la pagina cobrakai************************************************/
-main .cobra {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 80%; }
-  main .cobra img {
-    width: 40%;
+main {
+  height: 342px; }
+  main .cobra {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 42%; }
-
-main .card {
-  width: 500px;
-  background-color: green;
-  margin: 100px auto 30px auto;
-  border-radius: 6px;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 50px;
-  margin-bottom: 0px; }
+    bottom: 80%; }
+    main .cobra img {
+      width: 40%;
+      position: relative;
+      left: 42%; }
+  main .card {
+    width: 500px;
+    background-color: green;
+    margin: 100px auto 30px auto;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 0px; }
 
 /*********************************************************************************************/
 /*****************************************Main de la pagina karate kid************************/
@@ -143,6 +144,12 @@ main #panel {
   display: flex;
   justify-content: center; }
 
+main .colorBoton {
+  width: 150px;
+  color: #fff;
+  background-color: red;
+  border-radius: 15px; }
+
 main .contenedorOpciones {
   display: flex;
   justify-content: center; }
@@ -157,3 +164,8 @@ main .card {
   position: relative;
   bottom: 50px;
   margin-bottom: 0px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }

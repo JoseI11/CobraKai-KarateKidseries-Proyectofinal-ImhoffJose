@@ -146,6 +146,7 @@ main {
 /*************************************************************************************************/
 /***********************MAIN de la pagina cobrakai************************************************/
 main {
+    height: 342px;
     .cobra {
         width: 90%;
         display: flex;
@@ -203,6 +204,12 @@ main {
         display: flex;
         justify-content: center;
     }
+    .colorBoton{
+        width: 150px;
+        color:#fff;
+        background-color: red;
+        border-radius: 15px;
+    }
     .contenedorOpciones{
         display: flex;
         justify-content: center;
@@ -220,4 +227,9 @@ main {
         
     }
 
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
