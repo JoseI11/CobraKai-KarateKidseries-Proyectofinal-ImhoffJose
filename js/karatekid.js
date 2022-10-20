@@ -1,6 +1,6 @@
 
 //Array de preguntas y respuestas
-const arrayKarateKidpregunta = [
+const arrayKarateKidpregunta =  [
     {
         pregunta: "¿En que ciudad Daniel y su madre vivian antes de mudarse a la ciudad de Los Angeles?",
         a: "Boston",
@@ -420,9 +420,7 @@ const arrayKarateKidpregunta = [
         orden: 45,
         saga: "Karate Kid III"
     },
-
-
-];
+]
 
 /////////////////Primera temporada/////////////
 const arrayCobraKai = [
@@ -605,154 +603,8 @@ let saga = " ";
 let nuevoArray = [];
 let arrayDesordenado = [];
 
-//Clase para calcular el puntaje
-class CuestionarioKarateKidCobraKai {
-    /*constructor(nombreJugador, puntaje) {
-        this.nombreJugador = nombreJugador;
-        this.puntaje = puntaje;
-    }*/
-    constructor(puntaje) {
-        this.puntaje = puntaje;
-
-    }
-
-    calcularPuntaje = () => {
-
-        this.puntaje++;
-        /*alert(`el puntaje es de ${this.puntaje}`);*/
-        return this.puntaje;
-    }
-}
-
-const escribir = () => {
-    let parrafo = document.getElementById("titulo");
-    console.log(parrafo.innerText);
-    //let texto =prompt("Que queres escribir?");
-    // parrafo.innerText="hola";
-    parrafo.innerText = "¿En que ciudad Daniel y su madre vivian antes de mudarse a la ciudad de Los Angeles?";
-
-}
-
-
-
-//opcionKarateKid();
-opcionKarateKid.addEventListener("click", (e) => {
-    // console.log(e.target);
-    //console.log(e.target.value);
-    saga = "Karate Kid";
-
-    opciones.innerText = saga;
-    let sagas = e.target.value;
-    filtrarPreguntas(sagas);
-    /*nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga.toLowerCase() === "Karate Kid".toLowerCase());
-    console.log(nuevoArray);*/
-
-
-    /*pregunta=document.getElementById("titulo");
-    respuestaA=document.getElementById("opcionA");
-    respuestaB=document.getElementById("opcionB");
-    respuestaC=document.getElementById("opcionC");
-    comenzar=document.getElementById("comenzarJuego");
-    pregunta.innerText="¿Cuales son las 2 reglas que rigen el estilo Miyagi Do karate?";
-    respuestaA.innerText="Golpear duro, Golpear primero"
-    respuestaB.innerText= "El Karate es solo para la defensa, primero aprende la regla anterior";
-    respuestaC.innerText= "Respetar a tu oponente, Trabajar duro";
-    comenzar.innerText="Siguiente pregunta";
-    let respuestaCorrectaA=document.getElementById("flexRadioDefault1");
-
-    let imagen = document.querySelector(".card");
- 
-    imagen.style.display='';*/
-});
-//hacer funcion que me permita tomar la saga karate kid o karate kid 2 y que despues me lo filtre al array por esa saga
-let valor = 0;
-
-opcionKarateKidII.addEventListener("click", (e) => {
-
-    //console.log(e.target)
-    //console.log(e.target.value)
-    saga = "Karate Kid II";
-    opciones.innerText = saga;
-    let sagas = e.target.value
-    filtrarPreguntas(sagas);
-    ///////con esto agrego los elementos html en el lugar que quiero
-    /* do {
-         let titulos = document.createElement("h2");
-         titulos.setAttribute("id", "nuevoElemento");
-         titulos.innerHTML = "Se agrego correctamente";
-         let preguntaPanel = document.getElementById("panelPreguntas");
-         let nuevocontenedor = document.querySelector(".card");
-         nuevocontenedor.style.display = 'none';
-         titulos.classList.add('d-flex', 'justify-content-center', 'mb-0');
-         preguntaPanel.append(titulos);
-         valor++;
-     } while (valor > 1)*/
-
-    ///////////////////////////////////////////////
-    /*nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga.toLowerCase() === "Karate Kid II".toLowerCase());*/
-    /*let imagen = document.querySelector(".card");
-    imagen.style.display='none';*/
-
-
-
-});
-// lo voy a utilizar para ocultar elementos
-/*let imagen = document.querySelector(".card");
-     imagen.style.display='none';*/
-
-opcionKarateKidIII.addEventListener("click", (e) => {
-    let sagas = e.target.value
-    filtrarPreguntas(sagas);
-})
-
-const arrayPreguntas = (parametroArray) => {
-    let resultado = parametroArray.sort(function () { return Math.random() - 0.5 });
-    return resultado;
-}
-function filtrarPreguntas(saga) {
-    if (saga == "Karate Kid") {
-        nuevoArray = [];
-        nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga == "Karate Kid");
-        arrayDesordenado = arrayPreguntas(nuevoArray)
-        /*localStorage.setItem("Karate Kid",JSON.stringify(arrayDesordenado));
-        console.log(localStorage.key(0))*/
-        localStorage.setItem("Jose",0);
-        let valor=parseInt(localStorage.getItem("Jose")) + 1;
-        console.log(valor);
-       // localStorage.removeItem("Jose")
-        localStorage.setItem("Jose",valor);
-
-        
-
-    } else if (saga == "Karate Kid II") {
-        nuevoArray = [];
-        nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga == "Karate Kid II");
-        console.log(arrayPreguntas(nuevoArray));
-        arrayDesordenado = arrayPreguntas(nuevoArray)
-    } else if (saga == "Karate Kid III") {
-        nuevoArray = [];
-        nuevoArray = arrayKarateKidpregunta.filter((elemento) => elemento.saga == "Karate Kid III");
-        console.log(arrayPreguntas(nuevoArray));
-        arrayDesordenado = arrayPreguntas(nuevoArray)
-    }
-
-}
-
-const comienzaJuego = () => {
-
-    if (opcionKarateKid() == "Karate Kid II".toLowerCase()) {
-        alert(saga);
-    } else if (saga.toLowerCase() == "Karate Kid".toLowerCase()) {
-        alert("opcion 2");
-    }
-}
-let ocultarPanel = () => {
-    let panel = document.querySelector("#panelPreguntas");
-    let pregunta = document.querySelector(".card");
-    panel.removeChild(pregunta);
-}
 ////////Variables de tipo global para manejar el panel de preguntas////////////////////////
-let titulos;
+let botonComenzarjuego;
 let nuevoPanelpreguntas;
 let botonSiguientepregunta;
 let preguntaTitulo;
@@ -766,21 +618,113 @@ let div3;
 let radio3;
 let label3;
 let contPregunta = 0;
+let arrayTransformado
+/////////////////////////////////////////
 
-///////////////////////////////////////////
+//Clase para calcular el puntaje
+class CuestionarioKarateKidCobraKai {
+    constructor(nombreJugador, puntaje) {
+        this.nombreJugador = nombreJugador;
+        this.puntaje = puntaje;
+    }
+    /*constructor(puntaje) {
+        this.puntaje = puntaje;
+
+    }*/
+
+    calcularPuntaje = () => {
+
+        this.puntaje++;
+        /*alert(`el puntaje es de ${this.puntaje}`);*/
+        return this.puntaje;
+    }
+}
+
+
+
+opcionKarateKid.addEventListener("click", (e) => {
+    localStorage.clear();
+    // console.log(e.target);
+    //console.log(e.target.value);
+    /*saga = "Karate Kid";
+
+    opciones.innerText = saga;*/
+    let sagas = e.target.value;
+    filtrarPreguntas(sagas);
+
+});
+
+
+
+opcionKarateKidII.addEventListener("click", (e) => {
+
+    localStorage.clear();
+    /*saga = "Karate Kid II";
+    opciones.innerText = saga;*/
+    let sagas = e.target.value
+    filtrarPreguntas(sagas);
+
+
+});
+
+
+opcionKarateKidIII.addEventListener("click", (e) => {
+    localStorage.clear();
+    let sagas = e.target.value
+    filtrarPreguntas(sagas);
+})
+
+const arrayPreguntas = (parametroArray) => {
+    let resultado = parametroArray.sort(function () { return Math.random() - 0.5 });
+    return resultado;
+}
+function filtrarPreguntas(saga) {
+    if (saga == "Karate Kid") {    
+        arrayTransformado=arrayKarateKidpregunta.
+        filter((elemento) => elemento.saga == "Karate Kid");
+        localStorage.setItem("Karate Kid",JSON.stringify(arrayTransformado));
+        nuevoArray=JSON.parse(localStorage.getItem("Karate Kid"))
+        arrayDesordenado = arrayPreguntas(nuevoArray);
+
+    } else if (saga == "Karate Kid II") {
+        arrayTransformado=arrayKarateKidpregunta.
+        filter((elemento) => elemento.saga == "Karate Kid II");
+        localStorage.setItem("Karate Kid II",JSON.stringify(arrayTransformado));
+        nuevoArray=JSON.parse(localStorage.getItem("Karate Kid II"))
+        arrayDesordenado = arrayPreguntas(nuevoArray)
+    } else if (saga == "Karate Kid III") {
+        arrayTransformado=arrayKarateKidpregunta.
+        filter((elemento) => elemento.saga == "Karate Kid III");
+        localStorage.setItem("Karate Kid III",JSON.stringify(arrayTransformado));
+        nuevoArray=JSON.parse(localStorage.getItem("Karate Kid III"))
+        arrayDesordenado = arrayPreguntas(nuevoArray)
+    }
+
+}
+//Funcion para ocultar el panel por defecto de Bootstrap. 
+let ocultarPanel = () => {
+    let panel = document.querySelector("#panelPreguntas");
+    let pregunta = document.querySelector(".card");
+    panel.removeChild(pregunta);
+}
+
 ocultarPanel();
+
+//Funcion para crear el boton de Inicio antes de entrar al juego
 let botonInicio = () => {
-    titulos = document.createElement("button");
-    titulos.setAttribute("id", "nuevoBoton");
-    titulos.innerHTML = "Se agrego correctamente";
+    botonComenzarjuego = document.createElement("button");
+    
+
+    botonComenzarjuego.setAttribute("id", "nuevoBoton");
+    botonComenzarjuego.innerHTML = "Comenzar juego";
     let botonInicio = document.getElementById("panelPreguntas");
-    titulos.classList.add('d-flex', 'justify-content-center', 'mb-4', 'mt-4', 'start',"colorBoton");
+    botonComenzarjuego.classList.add('d-flex', 'justify-content-center', 'mb-4', 'mt-4', 'start', "colorBoton");
     botonInicio.classList.add('d-flex', 'justify-content-center', 'mb-0');
     botonInicio.append(titulos);
 }
 botonInicio();
-////////Funcion para crear el panel de preguntas(titulo de pregunta,radios de respuesta y boton de confirmacion)
 
+//Función para crear el panel de pregunta y respuestas junto con el boton que permite avanzar de pregunta
 let crearPanelpreguntas = (boton, panelPadre, jugador1) => {
     /*let panelPadre=document.getElementById("panelPreguntas");*/
     panelPadre.removeChild(boton);
@@ -792,126 +736,83 @@ let crearPanelpreguntas = (boton, panelPadre, jugador1) => {
     preguntaTitulo.setAttribute("id", "titulo");
     nuevoPanelpreguntas.append(preguntaTitulo);
 
-
-
     for (j = 0; j < 3; j++) {
+        switch (j) {
+            case 0:
+                div1 = document.createElement("DIV");
+                div1.classList.add("form-check")
+                nuevoPanelpreguntas.append(div1);
+                radio1 = document.createElement("input");
+                radio1.setAttribute("id", "opcion1");
+                radio1.setAttribute("type", "radio");
+                radio1.setAttribute("name", "flexRadioDefault");
+                radio1.setAttribute("value", "a");
+                radio1.classList.add("form-check-input");
+                div1.append(radio1);
+                label1 = document.createElement("label");
+                label1.setAttribute("id", "opcionA")
+                label1.classList.add("form-check-label");
+                div1.append(label1);
 
-
-         switch (j) {
-             case 0:
-                 div1 = document.createElement("DIV");
-                 div1.classList.add("form-check")
-                 nuevoPanelpreguntas.append(div1);
-                 radio1 = document.createElement("input");
-                 radio1.setAttribute("id", "opcion1");
-                 radio1.setAttribute("type", "radio");
-                 radio1.setAttribute("name", "flexRadioDefault");
-                 radio1.setAttribute("value", "a");
-                 radio1.classList.add("form-check-input");
-                 div1.append(radio1);
-                 label1 = document.createElement("label");
-                 label1.setAttribute("id", "opcionA")
-                 label1.classList.add("form-check-label");
-                 div1.append(label1);
- 
-                 break;
-             case 1:
-                 div2 = document.createElement("DIV");
-                 div2.classList.add("form-check")
-                 nuevoPanelpreguntas.append(div2);
-                 radio2 = document.createElement("input");
-                 radio2.setAttribute("id", "opcion2");
-                 radio2.setAttribute("type", "radio");
-                 radio2.setAttribute("name", "flexRadioDefault");
-                 radio2.setAttribute("value", "b");
-                 radio2.classList.add("form-check-input");
-                 div2.append(radio2);
-                 label2 = document.createElement("label");
-                 label2.setAttribute("id", "opcionB")
-                 label2.classList.add("form-check-label");
-                 div2.append(label2);
-                 break;
-             case 2:
-                 div3 = document.createElement("DIV");
-                 div3.classList.add("form-check")
-                 nuevoPanelpreguntas.append(div3);
-                 radio3 = document.createElement("input");
-                 radio3.setAttribute("id", "opcion3");
-                 radio3.setAttribute("type", "radio");
-                 radio3.setAttribute("name", "flexRadioDefault");
-                 radio3.setAttribute("value", "c");
-                 radio3.classList.add("form-check-input");
-                 div3.append(radio3);
-                 label3 = document.createElement("label");
-                 label3.setAttribute("id", "opcionC")
-                 label3.classList.add("form-check-label");
-                 div3.append(label3);
-                 break;
-             default:
-                 break;
-         }
+                break;
+            case 1:
+                div2 = document.createElement("DIV");
+                div2.classList.add("form-check")
+                nuevoPanelpreguntas.append(div2);
+                radio2 = document.createElement("input");
+                radio2.setAttribute("id", "opcion2");
+                radio2.setAttribute("type", "radio");
+                radio2.setAttribute("name", "flexRadioDefault");
+                radio2.setAttribute("value", "b");
+                radio2.classList.add("form-check-input");
+                div2.append(radio2);
+                label2 = document.createElement("label");
+                label2.setAttribute("id", "opcionB")
+                label2.classList.add("form-check-label");
+                div2.append(label2);
+                break;
+            case 2:
+                div3 = document.createElement("DIV");
+                div3.classList.add("form-check")
+                nuevoPanelpreguntas.append(div3);
+                radio3 = document.createElement("input");
+                radio3.setAttribute("id", "opcion3");
+                radio3.setAttribute("type", "radio");
+                radio3.setAttribute("name", "flexRadioDefault");
+                radio3.setAttribute("value", "c");
+                radio3.classList.add("form-check-input");
+                div3.append(radio3);
+                label3 = document.createElement("label");
+                label3.setAttribute("id", "opcionC")
+                label3.classList.add("form-check-label");
+                div3.append(label3);
+                break;
+            default:
+                break;
+        }
 
     }
 
+    let botonAvancepregunta = crearbotonSiguientepregunta(botonSiguientepregunta, nuevoPanelpreguntas);
 
-    let boton1 = crearbotonSiguientepregunta(botonSiguientepregunta, nuevoPanelpreguntas);
-    console.log(radio1);
-    console.log(radio2);
-    console.log(radio3);
-    /*let opcionSeleccionada = devolverOpcionseleccionada(radio1, radio2, radio3)
-    console.log(opcionSeleccionada + "" + "abfdfdsf")*/
-    console.log(jugador1);
-    funcionAvancepreguntas(boton1, jugador1);
+    funcionAvancepreguntas(botonAvancepregunta, jugador1);
 
 }
+//Función para deseleccionar las respuestas una vez que se avanza de pregunta
 function unselect() {
-    document.querySelectorAll('[name=flexRadioDefault]').forEach((x) => x.checked = false);
+    document.querySelectorAll('[name=flexRadioDefault]').forEach((respuestaSeleccionada) => respuestaSeleccionada.checked = false);
 }
-const devolverOpcionseleccionada = (radioOpcion1, radioOpcion2, radioOpcion3) => {
-    radioOpcion1.addEventListener("click", (e) => {
-
-        return e.target.value;
-    })
-    radioOpcion2.addEventListener("click", (e) => {
-        return e.target.value;
-    })
-    radioOpcion3.addEventListener("click", (e) => {
-        return e.target.value;
-    })
-}
-const funcionAvancepreguntas = (boton1, jugadorNuevo) => {
+// Esta es la función más importante ya que se encarga de avanzar las preguntas como asi tambien calcular el puntaje de cada jugador
+const funcionAvancepreguntas = (botonSiguiente, jugadorNuevo) => {
     let prueba;
     let resultadoFinal1 = 0;
 
 
-    boton1.addEventListener("click", () => {
-        if (document.querySelector('input[id="opcion1"]:checked')) {
-            prueba = "a";
-        } else if (document.querySelector('input[id="opcion2"]:checked')) {
-            prueba = "b";
-        } else if (document.querySelector('input[id="opcion3"]:checked')) {
-            prueba = "c";
-        }
-
-        //console.log(prueba + "gh");
-        //  console.log(jugadorNuevo.puntaje);
-
-        if (contPregunta == 0) {
-            console.log(arrayDesordenado[contPregunta].correcta + "bn");
-
-            if (arrayDesordenado[contPregunta].correcta == prueba) {
-                resultadoFinal1 = jugadorNuevo.calcularPuntaje();
-                console.log(resultadoFinal1);
-
-            }
-            preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
-            label1.innerText = arrayDesordenado[contPregunta].a
-            label2.innerText = arrayDesordenado[contPregunta].b
-            label3.innerText = arrayDesordenado[contPregunta].c
-
-        }
-        if (contPregunta <= 14 && contPregunta != 0) {
-
+    botonSiguiente.addEventListener("click", () => {
+        if (!document.querySelector('input[id="opcion1"]:checked') && !document.querySelector('input[id="opcion2"]:checked') && !document.querySelector('input[id="opcion3"]:checked')) {
+            let informacion="Debe seleccionar una respuesta";
+            modalPregunta(informacion);
+        } else {
             if (document.querySelector('input[id="opcion1"]:checked')) {
                 prueba = "a";
             } else if (document.querySelector('input[id="opcion2"]:checked')) {
@@ -919,85 +820,124 @@ const funcionAvancepreguntas = (boton1, jugadorNuevo) => {
             } else if (document.querySelector('input[id="opcion3"]:checked')) {
                 prueba = "c";
             }
-            console.log(arrayDesordenado[contPregunta].correcta + "bnc");
-            console.log(prueba + "2");
-            if (arrayDesordenado[contPregunta].correcta == prueba) {
-                console.log(resultadoFinal1);
-                resultadoFinal1 = jugadorNuevo.calcularPuntaje();
-                /*console.log(resultadoFinal1+"a");*/
-            }
-            /*console.log(contPregunta);*/
-            /*preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
-            label1.innerText = arrayDesordenado[contPregunta].a
-            label2.innerText = arrayDesordenado[contPregunta].b
-            label3.innerText = arrayDesordenado[contPregunta].c*/
-            /*else{
+            if (contPregunta == 0) {
+           
+
+                if (arrayDesordenado[contPregunta].correcta == prueba) {
+                    resultadoFinal1 = jugadorNuevo.calcularPuntaje();
+                    console.log(resultadoFinal1);
+
+                }
                 preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
                 label1.innerText = arrayDesordenado[contPregunta].a
                 label2.innerText = arrayDesordenado[contPregunta].b
                 label3.innerText = arrayDesordenado[contPregunta].c
+
+            }
+            if (contPregunta <= 14 && contPregunta != 0) {
+
+                if (document.querySelector('input[id="opcion1"]:checked')) {
+                    prueba = "a";
+                } else if (document.querySelector('input[id="opcion2"]:checked')) {
+                    prueba = "b";
+                } else if (document.querySelector('input[id="opcion3"]:checked')) {
+                    prueba = "c";
+                }
+
+                if (arrayDesordenado[contPregunta].correcta == prueba) {
+
+                    resultadoFinal1 = jugadorNuevo.calcularPuntaje();
+                }
+
+
+
+
+            }
+            if (contPregunta != 14) {
                 contPregunta++;
-            }*/
+                preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
+                label1.innerText = arrayDesordenado[contPregunta].a
+                label2.innerText = arrayDesordenado[contPregunta].b
+                label3.innerText = arrayDesordenado[contPregunta].c
+                unselect();
+            } else {
+                localStorage.removeItem(jugadorNuevo.nombreJugador);
+                localStorage.setItem(jugadorNuevo.nombreJugador,jugadorNuevo.puntaje);
+                crearPuntajeRespuestas(jugadorNuevo.puntaje);
+                let botonRecargapagina = document.getElementById("botonRecarga");
+                botonRecargapagina.addEventListener("click", () => {
+                    location.reload();
+                })
 
-
-
+            }
         }
-        //hacer control con if para evitar que cuando el contPregunta llegue a 14 no sume mas debido a que el array de preguntas se acabo
-        if (contPregunta != 14) {
-            contPregunta++;
-            preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
-            label1.innerText = arrayDesordenado[contPregunta].a
-            label2.innerText = arrayDesordenado[contPregunta].b
-            label3.innerText = arrayDesordenado[contPregunta].c
-            unselect();
-        } else {
-            alert(`Tu puntaje es de: ${resultadoFinal1}`)
-        }
-        //contPregunta++;
-
-
     });
 }
-let jugadores;
-titulos.addEventListener("click", (e) => {
-    document.getElementById("opciones").style.display = 'none';
-    document.getElementById("contenedor").style.display = 'none';
 
-    if (document.querySelector('input[id="radioKarateKidII"]:checked') || document.querySelector('input[id="radioKarateKid"]:checked') || document.querySelector('input[id="radioKarateKidIII"]:checked')) {
+//Boton que se encarga de empezar el juego mostrando la primera pregunta del array filtrado por saga
+botonComenzarjuego.addEventListener("click", (e) => {
+    let nombreVerificar = "^[ a-zA-ZñÑáéíóúÁÉÍÓÚ]+$";
+    let campoNombre = document.getElementById("textoNombre").value;
+
+    if (document.querySelector('input[id="radioKarateKidII"]:checked') || document.querySelector('input[id="radioKarateKid"]:checked') || document.querySelector('input[id="radioKarateKidIII"]:checked') && campoNombre != '') {
+        if (campoNombre != '') {
+            if (campoNombre.match(nombreVerificar)) {
+                document.getElementById("opciones").style.display = 'none';
+                document.getElementById("contenedor").style.display = 'none';
+                document.getElementById("ingresoNombre").style.display = 'none';
+
+                filtrarPreguntas();
+                // console.log(nuevoArray);
+                let panel = document.getElementById("panelPreguntas");
+
+                let boton = document.getElementById("nuevoBoton");
+
+                jugadores = new CuestionarioKarateKidCobraKai(campoNombre,0);
+                
+                localStorage.setItem(jugadores.nombreJugador,jugadores.puntaje);
+                // console.log(jugadores);
+                crearPanelpreguntas(boton, panel, jugadores);
+
+                preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta
+                label1.innerText = nuevoArray[contPregunta].a
+                label2.innerText = nuevoArray[contPregunta].b
+                label3.innerText = nuevoArray[contPregunta].c
+                nuevoArray
+            } else {
+                textoModal = "Debe ingresar su nombre sin numeros o signos que no sean acentos";
+                modalPregunta(textoModal);
+            }
+
+        } else {
+            textoModal="Debe ingresar su nombre";
+            modalPregunta(textoModal);
+        }
 
 
-        filtrarPreguntas();
-        // console.log(nuevoArray);
-        let panel = document.getElementById("panelPreguntas");
 
-        let boton = document.getElementById("nuevoBoton");
-
-        jugadores = new CuestionarioKarateKidCobraKai(0);
-        // console.log(jugadores);
-        crearPanelpreguntas(boton, panel, jugadores);
-
-        preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta
-        label1.innerText = nuevoArray[contPregunta].a
-        label2.innerText = nuevoArray[contPregunta].b
-        label3.innerText = nuevoArray[contPregunta].c
-        nuevoArray
-
-
+    } else if (campoNombre != '' && !document.querySelector('input[id="radioKarateKidII"]:checked') && !document.querySelector('input[id="radioKarateKid"]:checked') && !document.querySelector('input[id="radioKarateKidIII"]:checked')) {
+        textoModal="Debe seleccionar una opción";
+        modalPregunta(textoModal)
+      
     } else {
-
-
-        $(document).ready(function () {
-            $("#ejemplo").modal('show')
-        })
-
-        /*alert("Debe seleccionar una opción");*/
-
-        /*radio1.addEventListener("click", (e) => {
-            console.log(e.target.value);
-        })*/
+       textoModal="Debe seleccionar una opción e ingresar su nombre";
+      modalPregunta(textoModal);
+     
     }
 
 })
+// Funcion para mostrar un mensaje en caso de que se produzca algun error como por ejemplo, dejar opciones sin seleccionar o campos vacios o con valores incorrectos
+let modalPregunta=(texto)=>{
+    Swal.fire({
+        position: 'top',
+        icon:'warning',
+        title:"ATENCIÓN!!!✋",
+        text:texto,
+        allowOutsideClick:false,
+        cancelButtonAriaLabel: 'Ok'
+    })
+}
+//Funcion que crea el boton de avanzar de pregunta
 let crearbotonSiguientepregunta = (boton, panel) => {
     boton = document.createElement("button");
     boton.setAttribute("type", "button");
@@ -1007,26 +947,27 @@ let crearbotonSiguientepregunta = (boton, panel) => {
     panel.append(boton);
     return boton;
 }
-
-
-const evaluarRespuesta = (respuestaA, respuestaB, respuestaC, array) => {
-
-
+////////Funcion para crear el panel de puntaje junto con el boton utilizado para volver a cargar la pagina para jugar de nuevo
+let crearPuntajeRespuestas = (puntaje) => {
+    let panelPadrepreguntas = document.getElementById("panelPreguntas")
+    let paneldePreguntas = document.getElementById("preguntas");
+    paneldePreguntas.style.display = 'none';
+    let panelPuntaje = document.createElement("DIV");
+    panelPuntaje.classList.add("puntaje", "d-flex", "justify-content-center");
+    panelPuntaje.setAttribute("id","divPuntaje");
+    panelPadrepreguntas.append(panelPuntaje);
+    let textoPuntaje = document.createElement("h6");
+    textoPuntaje.setAttribute("id","puntajeTotal");
+    textoPuntaje.innerText = `Tu puntaje es de ${puntaje}`;
+    panelPuntaje.append(textoPuntaje);
+    let botonRecargarJuego = document.createElement("button");
+    botonRecargarJuego.setAttribute("type", "button");
+    botonRecargarJuego.setAttribute("id", "botonRecarga");
+    botonRecargarJuego.classList.add('d-flex', 'justify-content-center', 'mb-4', 'mt-4', "colorBoton");
+    botonRecargarJuego.innerText = "Volver a jugar";
+    panelPuntaje.append(botonRecargarJuego);
 }
 //hacer una funcion agregandole a cada input de los radios de respuesta un value con la letra (a,b,c) para compararlo con una propiedad llamada correcta en cada objeto del array de preguntas y respuestas de karate kid
-
-
-
-
-
-
-/*if (document.querySelector('input[id="radioKarateKid"]:checked')) {
-       
-    } else if (document.querySelector('input[id="radioKarateKidII"]:checked')) {
-        alert("Karate Kid II")
-    } else if (document.querySelector('input[id="radioKarateKidIII"]:checked')) {
-        alert("Karate Kid III")
-    }*/
 
 
 

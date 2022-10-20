@@ -11,6 +11,7 @@
         .navbar-brand img {
             width: 50%;
         }
+
         .navbar-nav {
             .nav-link {
                 font-family: 'Baskervville', serif;
@@ -51,6 +52,7 @@
 
 main {
     /***********************Background de todas las páginas********************************************/
+
     background-image: linear-gradient(yellow, rgba(0, 0, 0, 0.411));
 
     /***********************************************************************************************/
@@ -74,6 +76,7 @@ main {
 
             img {
                 width: 100%;
+
                 &:hover {
                     opacity: 0.5;
                     cursor: pointer;
@@ -88,6 +91,7 @@ main {
 
             img {
                 width: 100%;
+
                 &:hover {
                     opacity: 0.5;
                     cursor: pointer;
@@ -98,29 +102,35 @@ main {
 
 
     }
-    .tituloClips{
+
+    .tituloClips {
         display: flex;
         justify-content: center;
     }
-    .containerClips{
+
+    .containerClips {
         margin: auto;
         width: 95%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: "clipstheKarateKid clipsCobraKai";
-        .clipstheKarateKid{
+
+        .clipstheKarateKid {
             width: 95%;
             margin-bottom: 50px;
-            iframe{
+
+            iframe {
                 width: 100%;
                 height: 320px;
             }
         }
-        .clipsCobraKai{
+
+        .clipsCobraKai {
             width: 95%;
             margin-bottom: 50px;
-            iframe{
+
+            iframe {
                 width: 100%;
                 height: 320px;
             }
@@ -145,8 +155,9 @@ main {
 
 /*************************************************************************************************/
 /***********************MAIN de la pagina cobrakai************************************************/
-main {
+#ventanaPrincipal {
     height: 342px;
+
     .cobra {
         width: 90%;
         display: flex;
@@ -177,10 +188,11 @@ main {
     }
 
 }
+
 /*********************************************************************************************/
 /*****************************************Main de la pagina karate kid************************/
-main {
-    .posterKarateKid{
+#ventanaPrincipal {
+    .posterKarateKid {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -196,24 +208,74 @@ main {
         }
 
     }
-    #opciones{
+
+    #opciones {
         display: flex;
         justify-content: center;
     }
-    #panel{
+
+    #panel {
         display: flex;
         justify-content: center;
     }
-    .colorBoton{
+
+    #divPuntaje {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        width: 500px;
+        text-align: center;
+        align-items: center;
+        margin: 100px auto 30px auto;
+        font-size: 1.2rem;
+        font-family: ui-monospace;
+        border-radius: 6px;
+        padding: 20px;
+        position: relative;
+        bottom: 50px;
+        #puntajeTotal{
+            font-size: 2rem;
+        }
+        .botonPuntaje{
+            width: 150px;
+            color: #fff;
+            background-color: lightseagreen;
+            border-radius: 15px;
+            position: relative;
+        }
+
+    }
+
+    .colorBoton {
         width: 150px;
-        color:#fff;
-        background-color: red;
+        color: #fff;
+        background-color: lightseagreen;
         border-radius: 15px;
+        position: relative;
+
     }
-    .contenedorOpciones{
+
+    .form-label {
         display: flex;
         justify-content: center;
     }
+
+    .form-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 25%;
+        width: 50%;
+        margin-bottom: 3%;
+    }
+
+    .contenedorOpciones {
+        display: flex;
+        justify-content: center;
+    }
+
     .card {
         width: 500px;
         background-color: #fff;
@@ -224,12 +286,7 @@ main {
         position: relative;
         bottom: 50px;
         margin-bottom: 0px;
-        
+
     }
 
-}
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }

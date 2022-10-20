@@ -96,9 +96,9 @@ main {
 
 /*************************************************************************************************/
 /***********************MAIN de la pagina cobrakai************************************************/
-main {
+#ventanaPrincipal {
   height: 342px; }
-  main .cobra {
+  #ventanaPrincipal .cobra {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -106,11 +106,11 @@ main {
     align-items: center;
     position: relative;
     bottom: 80%; }
-    main .cobra img {
+    #ventanaPrincipal .cobra img {
       width: 40%;
       position: relative;
       left: 42%; }
-  main .card {
+  #ventanaPrincipal .card {
     width: 500px;
     background-color: green;
     margin: 100px auto 30px auto;
@@ -123,7 +123,7 @@ main {
 
 /*********************************************************************************************/
 /*****************************************Main de la pagina karate kid************************/
-main .posterKarateKid {
+#ventanaPrincipal .posterKarateKid {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -131,30 +131,68 @@ main .posterKarateKid {
   align-items: center;
   position: relative;
   bottom: 80%; }
-  main .posterKarateKid img {
+  #ventanaPrincipal .posterKarateKid img {
     width: 80%;
     position: relative;
     left: 38%; }
 
-main #opciones {
+#ventanaPrincipal #opciones {
   display: flex;
   justify-content: center; }
 
-main #panel {
+#ventanaPrincipal #panel {
   display: flex;
   justify-content: center; }
 
-main .colorBoton {
+#ventanaPrincipal #divPuntaje {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 500px;
+  text-align: center;
+  align-items: center;
+  margin: 100px auto 30px auto;
+  font-size: 1.2rem;
+  font-family: ui-monospace;
+  border-radius: 6px;
+  padding: 20px;
+  position: relative;
+  bottom: 50px; }
+  #ventanaPrincipal #divPuntaje #puntajeTotal {
+    font-size: 2rem; }
+  #ventanaPrincipal #divPuntaje .botonPuntaje {
+    width: 150px;
+    color: #fff;
+    background-color: lightseagreen;
+    border-radius: 15px;
+    position: relative; }
+
+#ventanaPrincipal .colorBoton {
   width: 150px;
   color: #fff;
-  background-color: red;
-  border-radius: 15px; }
+  background-color: lightseagreen;
+  border-radius: 15px;
+  position: relative; }
 
-main .contenedorOpciones {
+#ventanaPrincipal .form-label {
   display: flex;
   justify-content: center; }
 
-main .card {
+#ventanaPrincipal .form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 25%;
+  width: 50%;
+  margin-bottom: 3%; }
+
+#ventanaPrincipal .contenedorOpciones {
+  display: flex;
+  justify-content: center; }
+
+#ventanaPrincipal .card {
   width: 500px;
   background-color: #fff;
   margin: 100px auto 30px auto;
@@ -164,8 +202,3 @@ main .card {
   position: relative;
   bottom: 50px;
   margin-bottom: 0px; }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
