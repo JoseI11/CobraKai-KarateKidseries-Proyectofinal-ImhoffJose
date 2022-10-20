@@ -138,7 +138,8 @@ main {
 
 #ventanaPrincipal #opciones {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 60px; }
 
 #ventanaPrincipal #panel {
   display: flex;

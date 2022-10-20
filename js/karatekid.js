@@ -643,7 +643,7 @@ class CuestionarioKarateKidCobraKai {
 
 
 opcionKarateKid.addEventListener("click", (e) => {
-    localStorage.clear();
+   
     // console.log(e.target);
     //console.log(e.target.value);
     /*saga = "Karate Kid";
@@ -658,7 +658,7 @@ opcionKarateKid.addEventListener("click", (e) => {
 
 opcionKarateKidII.addEventListener("click", (e) => {
 
-    localStorage.clear();
+    
     /*saga = "Karate Kid II";
     opciones.innerText = saga;*/
     let sagas = e.target.value
@@ -669,7 +669,7 @@ opcionKarateKidII.addEventListener("click", (e) => {
 
 
 opcionKarateKidIII.addEventListener("click", (e) => {
-    localStorage.clear();
+   
     let sagas = e.target.value
     filtrarPreguntas(sagas);
 })
@@ -720,7 +720,7 @@ let botonInicio = () => {
     let botonInicio = document.getElementById("panelPreguntas");
     botonComenzarjuego.classList.add('d-flex', 'justify-content-center', 'mb-4', 'mt-4', 'start', "colorBoton");
     botonInicio.classList.add('d-flex', 'justify-content-center', 'mb-0');
-    botonInicio.append(titulos);
+    botonInicio.append(botonComenzarjuego);
 }
 botonInicio();
 
@@ -864,6 +864,8 @@ const funcionAvancepreguntas = (botonSiguiente, jugadorNuevo) => {
                 localStorage.removeItem(jugadorNuevo.nombreJugador);
                 localStorage.setItem(jugadorNuevo.nombreJugador,jugadorNuevo.puntaje);
                 crearPuntajeRespuestas(jugadorNuevo.puntaje);
+                let llave=localStorage.key(0);
+                localStorage.removeItem(llave);
                 let botonRecargapagina = document.getElementById("botonRecarga");
                 botonRecargapagina.addEventListener("click", () => {
                     location.reload();
