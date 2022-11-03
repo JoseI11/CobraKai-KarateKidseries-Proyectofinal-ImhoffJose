@@ -155,8 +155,8 @@ main {
 
 /*************************************************************************************************/
 /***********************MAIN de la pagina cobrakai************************************************/
-#ventanaPrincipal {
-    height: 342px;
+/*#ventanaPrincipal {
+
 
     .cobra {
         width: 90%;
@@ -187,11 +187,13 @@ main {
         margin-bottom: 0px;
     }
 
-}
+}/*
 
 /*********************************************************************************************/
 /*****************************************Main de la pagina karate kid************************/
-#ventanaPrincipal {
+.ventanaPrincipal {
+    height: 372px;
+
     .posterKarateKid {
         width: 90%;
         display: flex;
@@ -201,10 +203,10 @@ main {
         position: relative;
         bottom: 80%;
 
-        img {
+        .idImagen {
             width: 80%;
             position: relative;
-            left: 38%;
+            left: 31%;
         }
 
     }
@@ -213,12 +215,24 @@ main {
         display: flex;
         justify-content: center;
         margin-top: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+   #ingresoNombre{
+        .form-label{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+        }
+        #textoNombre{
+            background-color: rgb(236, 159, 159);
+        }
+   }
 
     #panel {
         display: flex;
         justify-content: center;
     }
+
+
 
     #divPuntaje {
         display: flex;
@@ -235,10 +249,12 @@ main {
         padding: 20px;
         position: relative;
         bottom: 50px;
-        #puntajeTotal{
+
+        #puntajeTotal {
             font-size: 2rem;
         }
-        .botonPuntaje{
+
+        .botonPuntaje {
             width: 150px;
             color: #fff;
             background-color: lightseagreen;
@@ -270,6 +286,44 @@ main {
         left: 25%;
         width: 50%;
         margin-bottom: 3%;
+    }
+
+    #tableroPuntaje {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        #puntajesTabla {
+        
+
+            thead {
+                tr {
+                    background-color: lightblue;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    #headerPuntaje {
+                        cursor: pointer;
+
+                    }
+                }
+
+            }
+
+            tbody {
+                text-align: center;
+
+                tr {
+                    font-weight: bold;
+                    &:hover {
+                        background-color: lightcoral;
+                    }
+                }
+
+            }
+
+        }
     }
 
     .contenedorOpciones {
