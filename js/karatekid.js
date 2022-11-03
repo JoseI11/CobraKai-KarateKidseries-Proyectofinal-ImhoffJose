@@ -44,7 +44,7 @@ const obtenerDatospreguntasjson = () => {
         .then(resultado => resultado.json())
         .then(res => {
             pruebaAr = res;
-            console.log(pruebaAr);
+
         })
 
 }
@@ -101,8 +101,7 @@ opcionKarateKidII.addEventListener("click", (e) => {
     let imagen = "../media/Karate-Kid-II.webp";
     let sagas = e.target.value;
 
-    console.log(arreglodepuntaje[0].nameJugador)
-    console.log(prueba1)
+
     crearImagen(imagen, sagas)
     seleccionPelicula = "Karate Kid II";
     filtrarPreguntas(sagas);
@@ -145,15 +144,8 @@ function filtrarPreguntas(saga) {
 
 
     if (saga == "Karate Kid") {
-        //  console.log(pruebaAr)
-        arrayTransformado = pruebaAr.
-            filter((elemento) => elemento.saga == "Karate Kid");
-        // console.log(arrayTransformado);  
-        console.log(arrayTransformado);
-        /*arrayTransformado = arrayKarateKidpregunta.
-            filter((elemento) => elemento.saga == "Karate Kid");*/
-        // console.log(arrayTransformado);  
-        //console.log(arrayTransformado); 
+       
+        arrayTransformado = pruebaAr.filter((elemento) => elemento.saga == "Karate Kid");
         localStorage.setItem("Karate Kid", JSON.stringify(arrayTransformado));
 
         nuevoArray = JSON.parse(localStorage.getItem("Karate Kid"))
@@ -163,7 +155,7 @@ function filtrarPreguntas(saga) {
 
         arrayTransformado = pruebaAr.
             filter((elemento) => elemento.saga == "Karate Kid II");
-        console.log(arrayTransformado);
+ 
         localStorage.setItem("Karate Kid II", JSON.stringify(arrayTransformado));
 
         nuevoArray = JSON.parse(localStorage.getItem("Karate Kid II"))
@@ -171,21 +163,16 @@ function filtrarPreguntas(saga) {
     } else if (saga == "Karate Kid III") {
         arrayTransformado = pruebaAr.
             filter((elemento) => elemento.saga == "Karate Kid III");
-        console.log(arrayTransformado);
+
         localStorage.setItem("Karate Kid III", JSON.stringify(arrayTransformado));
         nuevoArray = JSON.parse(localStorage.getItem("Karate Kid III"))
         arrayDesordenado = arrayPreguntas(nuevoArray)
     }
 
 }
-//Funcion para ocultar el panel por defecto de Bootstrap. 
-let ocultarPanel = () => {
-    let panel = document.querySelector("#panelPreguntas");
-    let pregunta = document.querySelector(".card");
-    panel.removeChild(pregunta);
-}
 
-//ocultarPanel();
+
+
 
 //Funcion para crear el boton de Inicio antes de entrar al juego
 let botonInicio = () => {
@@ -327,7 +314,7 @@ const funcionAvancepreguntas = (botonSiguiente, jugadorNuevo) => {
                         }
                     }).showToast();
                     resultadoFinal1 = jugadorNuevo.calcularPuntaje();
-                    console.log(resultadoFinal1);
+
 
                 }
             }
@@ -339,20 +326,20 @@ const funcionAvancepreguntas = (botonSiguiente, jugadorNuevo) => {
                 label3.innerText = arrayDesordenado[contPregunta].c
                 unselect();
             } else {
-               
-             
-                for (i=0; i<localStorage.length; i++) {
+
+
+                for (i = 0; i < localStorage.length; i++) {
                     key = localStorage.key(i);
-                  
-                    if(key!="arregloJugadores" || key != "Karate Kid II" || key != "Karate Kid III"|| key != "Karate Kid") {
-                       localStorage.removeItem(key);
+
+                    if (key != "arregloJugadores" || key != "Karate Kid II" || key != "Karate Kid III" || key != "Karate Kid") {
+                        localStorage.removeItem(key);
                     }
                 }
-                
-         
-                
-               localStorage.setItem(jugadorNuevo.nombreJugador, jugadorNuevo.puntaje);
-                
+
+
+
+                localStorage.setItem(jugadorNuevo.nombreJugador, jugadorNuevo.puntaje);
+
                 crearPuntajeRespuestas(jugadorNuevo.puntaje);
                 mostrarTablapuntajeboton();
 
@@ -360,16 +347,16 @@ const funcionAvancepreguntas = (botonSiguiente, jugadorNuevo) => {
                 if (localStorage.getItem("arregloJugadores") == null) {
 
                     arrayPuntajesJugadores.push(scoreJugadores);
-        
+
                     localStorage.setItem("arregloJugadores", JSON.stringify(arrayPuntajesJugadores));
-      
+
                 } else {
                     agregarArrayPuntaje(scoreJugadores);
                 }
                 botonTabla.addEventListener("click", () => {
                     let arrayNuevo = JSON.parse(localStorage.getItem("arregloJugadores"));
-                    console.log(arrayNuevo);
-                    //titulo1()
+        
+       
                     crearTablapuntaje(arrayNuevo);
                     let headPuntaje = document.querySelector("#headerPuntaje");
                     headPuntaje.addEventListener("click", () => {
@@ -404,34 +391,34 @@ function ordenarTablapuntajes(numeroColumna) {
         filas = tablaScore.rows;
         /*el for recorre todaas las filas de la tabla con excepcion del header de la tabla*/
         for (i = 1; i < (filas.length - 1); i++) {
-            
+
             shouldSwitch = false;
-            
+
             primerElemento = filas[i].getElementsByTagName("TD")[numeroColumna];
             segundoElemento = filas[i + 1].getElementsByTagName("TD")[numeroColumna];
 
             if (dir == "ascendente") {
-                if ( parseFloat(primerElemento.innerHTML) > parseFloat(segundoElemento.innerHTML)) {
-               
+                if (parseFloat(primerElemento.innerHTML) > parseFloat(segundoElemento.innerHTML)) {
+
                     shouldSwitch = true;
                     break;
                 }
             } else if (dir == "descendente") {
-                if ( parseFloat(primerElemento.innerHTML) < parseFloat(segundoElemento.innerHTML)) {
-                 
+                if (parseFloat(primerElemento.innerHTML) < parseFloat(segundoElemento.innerHTML)) {
+
                     shouldSwitch = true;
                     break;
                 }
             }
         }
         if (shouldSwitch) {
-           
+
             filas[i].parentNode.insertBefore(filas[i + 1], filas[i]);
             switching = true;
-         
+
             switchcount++;
         } else {
- 
+
             if (switchcount == 0 && dir == "ascendente") {
                 dir = "descendente";
                 switching = true;
@@ -471,10 +458,10 @@ const crearTablapuntaje = (arrayScorejugadores) => {
     divTabla.append(tablaEstructura);
     let tablaPuntajes = document.getElementById("puntajesTabla");
     let cantidadFilas = tablaPuntajes.getElementsByTagName('tr').length;
-    console.log(cantidadFilas);
+
     if (cantidadFilas <= 5) {
         ventanaPricipal1.style.height = '372px';
-        
+
     } else {
         ventanaPricipal1.style.height = 'auto';
     }
@@ -509,7 +496,7 @@ botonComenzarjuego.addEventListener("click", (e) => {
                 document.getElementById("ingresoNombre").style.display = 'none';
 
                 filtrarPreguntas();
-                // console.log(nuevoArray);
+     
                 let panel = document.getElementById("panelPreguntas");
 
                 let boton = document.getElementById("nuevoBoton");
@@ -517,7 +504,7 @@ botonComenzarjuego.addEventListener("click", (e) => {
                 jugadores = new CuestionarioKarateKidCobraKai(campoNombre, 0);
 
                 localStorage.setItem(jugadores.nombreJugador, jugadores.puntaje);
-                // console.log(jugadores);
+          
                 crearPanelpreguntas(boton, panel, jugadores);
 
                 preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta;
