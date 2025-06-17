@@ -2,8 +2,7 @@
 
 Este proyecto es una web inspirada en la serie **Cobra Kai / Karate Kid**, desarrollada como parte del curso de Desarrollo Web Full Stack en Coderhouse.  
 
-Incluye funcionalidades como galería de personajes, videos destacados, simulación de inicio de sesión y carrito de compras.
-
+Incluye funcionalidades como galería de personajes, videos destacados, y por supuesto un juego de trivia para probar los conocimientos de la serie
 ---
 
 ## 📌 Tecnologías utilizadas
@@ -31,3 +30,10 @@ Incluye funcionalidades como galería de personajes, videos destacados, simulaci
 1. Cloná el repositorio:
    ```bash
    git clone https://github.com/JoseI11/CobraKai-KarateKidseries-Proyectofinal-ImhoffJose.git
+   ```
+
+## 🙋‍♂️ Autor
+José Imhoff
+Desarrollador Front-End | React | JavaScript
+📧 joseimhoff.dev@gmail.com
+🔗 LinkedIn | GitHub
