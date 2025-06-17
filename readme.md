@@ -1,5 +1,33 @@
-# Descripcion del juego
-Este proyecto es un juego de preguntas y respuestas en donde al seleccionar una opcion correcta se le sumara un punto al jugador.
-En primer lugar se debe elegir que pelicula de Karate Kid se va a utilizar para las preguntas. Luego de esta manera el juego comienza, por 
-cada pregunta correcta se suma 1 punto, las respuestas incorrectas no suman. Para avanzar a la siguiente pregunta se debe si o si seleccionar
-una opcion.
+# 🥋 Cobra Kai | Proyecto Final - José Imhoff
+
+Este proyecto es una web inspirada en la serie **Cobra Kai / Karate Kid**, desarrollada como parte del curso de Desarrollo Web Full Stack en Coderhouse.  
+
+Incluye funcionalidades como galería de personajes, videos destacados, simulación de inicio de sesión y carrito de compras.
+
+---
+
+## 📌 Tecnologías utilizadas
+
+- **HTML5**  
+- **CSS3 (Flexbox y Grid)**  
+- **JavaScript (DOM, eventos, funciones, localStorage)**  
+- **Bootstrap 5**  
+- **SweetAlert2**  
+- **Fetch API (simulación de base de datos con JSON)**
+
+---
+
+## 💻 Funcionalidades principales
+
+✔️ Galería dinámica de personajes de la serie  
+✔️ Uso de `fetch()` para cargar datos desde JSON externo  
+✔️ Alerts personalizadas con SweetAlert2  
+✔️ Página "Nosotros", "Contacto", y más  
+
+---
+
+## 🚀 Cómo probar el proyecto
+
+1. Cloná el repositorio:
+   ```bash
+   git clone https://github.com/JoseI11/CobraKai-KarateKidseries-Proyectofinal-ImhoffJose.git
