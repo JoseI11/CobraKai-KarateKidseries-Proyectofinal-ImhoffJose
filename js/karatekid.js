@@ -1,4 +1,3 @@
-
 //Variables globales usadas en toda la aplicacion
 let opciones = document.getElementById("opciones");
 let opcionKarateKid = document.getElementById("radioKarateKid");
@@ -31,7 +30,7 @@ let label3;
 let contPregunta = 0;
 let arrayTransformado
 let seleccionPelicula;
-
+let idioma;
 let div;
 let radio;
 let label;
@@ -46,7 +45,6 @@ const obtenerDatospreguntasjson = () => {
             pruebaAr = res;
 
         })
-
 }
 
 obtenerDatospreguntasjson();
@@ -69,9 +67,11 @@ class CuestionarioKarateKidCobraKai {
     }
 }
 //Funcion para crear el objeto de cada jugador con su puntaje
-function NombrePuntaje(nameJugador, scorePuntaje) {
-    this.nameJugador = nameJugador;
-    this.scorePuntaje = scorePuntaje;
+class NombrePuntaje {
+    constructor(nameJugador, scorePuntaje) {
+        this.nameJugador = nameJugador;
+        this.scorePuntaje = scorePuntaje;
+    }
 }
 
 opcionKarateKid.addEventListener("click", (e) => {
@@ -79,6 +79,8 @@ opcionKarateKid.addEventListener("click", (e) => {
         localStorage.removeItem("Karate Kid III");
     } else if (localStorage.getItem("Karate Kid II") != null) {
         localStorage.removeItem("Karate Kid II");
+    }else if (localStorage.getItem("Cobra Kai") != null) {
+        localStorage.removeItem("Cobra Kai");
     }
 
     let imagen = "../media/karate-kid-momento-verdad.webp"
@@ -97,6 +99,8 @@ opcionKarateKidII.addEventListener("click", (e) => {
         localStorage.removeItem("Karate Kid III");
     } else if (localStorage.getItem("Karate Kid") != null) {
         localStorage.removeItem("Karate Kid");
+    }else if (localStorage.getItem("Cobra Kai") != null) {
+        localStorage.removeItem("Cobra Kai");
     }
     let imagen = "../media/Karate-Kid-II.webp";
     let sagas = e.target.value;
@@ -114,12 +118,30 @@ opcionKarateKidIII.addEventListener("click", (e) => {
         localStorage.removeItem("Karate Kid");
     } else if (localStorage.getItem("Karate Kid II") != null) {
         localStorage.removeItem("Karate Kid II");
+    } else if (localStorage.getItem("Cobra Kai") != null) {
+        localStorage.removeItem("Cobra Kai");
     }
 
     let sagas = e.target.value
     let imagen = "../media/Karate-Kid-III.webp";
     crearImagen(imagen, sagas)
     seleccionPelicula = "Karate Kid III";
+    filtrarPreguntas(sagas);
+})
+
+opcionCobraKai.addEventListener("click", (e) => {
+    if (localStorage.getItem("Karate Kid") != null) {
+        localStorage.removeItem("Karate Kid");
+    } else if (localStorage.getItem("Karate Kid II") != null) {
+        localStorage.removeItem("Karate Kid II");
+    } else if (localStorage.getItem("Karate Kid III") != null) {
+        localStorage.removeItem("Karate Kid III");
+    }
+
+    let sagas = e.target.value
+    let imagen = "../media/cobra-kai.webp";
+    crearImagen(imagen, sagas)
+    seleccionPelicula = "Cobra Kai";
     filtrarPreguntas(sagas);
 })
 const crearImagen = (imagen, saga) => {
@@ -167,12 +189,28 @@ function filtrarPreguntas(saga) {
         localStorage.setItem("Karate Kid III", JSON.stringify(arrayTransformado));
         nuevoArray = JSON.parse(localStorage.getItem("Karate Kid III"))
         arrayDesordenado = arrayPreguntas(nuevoArray)
+    }else if (saga == "Cobra Kai"){
+         arrayTransformado = pruebaAr.
+            filter((elemento) => elemento.saga == "Cobra Kai");
+
+        localStorage.setItem("Cobra Kai", JSON.stringify(arrayTransformado));
+        nuevoArray = JSON.parse(localStorage.getItem("Cobra Kai"))
+        arrayDesordenado = arrayPreguntas(nuevoArray)
     }
 
 }
 
 
+// --- CAMBIO: listeners para idioma ---
+let radioEN = document.getElementById("radioEN");
+let radioES = document.getElementById("radioES");
 
+radioEN.addEventListener("change", (e) => {
+    if (e.target.checked) idioma = "en";
+});
+radioES.addEventListener("change", (e) => {
+    if (e.target.checked) idioma = "es";
+});
 
 //Funcion para crear el boton de Inicio antes de entrar al juego
 let botonInicio = () => {
@@ -182,7 +220,7 @@ let botonInicio = () => {
     botonComenzarjuego.setAttribute("id", "nuevoBoton");
     botonComenzarjuego.innerHTML = "Comenzar juego";
     let botonInicio = document.getElementById("panelPreguntas");
-    botonComenzarjuego.classList.add('d-flex', 'justify-content-center', 'mb-4', 'mt-4', 'start', "colorBoton");
+    botonComenzarjuego.classList.add('d-flex', 'justify-content-center', 'mt-3', 'start', "colorBoton");
     botonInicio.classList.add('d-flex', 'justify-content-center', 'mb-0');
     botonInicio.append(botonComenzarjuego);
 }
@@ -320,10 +358,18 @@ const funcionAvancepreguntas = (botonSiguiente, jugadorNuevo) => {
             }
             if (contPregunta != 14) {
                 contPregunta++;
-                preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta
-                label1.innerText = arrayDesordenado[contPregunta].a
-                label2.innerText = arrayDesordenado[contPregunta].b
-                label3.innerText = arrayDesordenado[contPregunta].c
+                // --- CAMBIO: Mostrar pregunta y opciones según idioma ---
+                if (idioma === "en") {
+                    preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta_en;
+                    label1.innerText = arrayDesordenado[contPregunta].a_en;
+                    label2.innerText = arrayDesordenado[contPregunta].b_en;
+                    label3.innerText = arrayDesordenado[contPregunta].c_en;
+                } else {
+                    preguntaTitulo.innerText = arrayDesordenado[contPregunta].pregunta;
+                    label1.innerText = arrayDesordenado[contPregunta].a;
+                    label2.innerText = arrayDesordenado[contPregunta].b;
+                    label3.innerText = arrayDesordenado[contPregunta].c;
+                }
                 unselect();
             } else {
 
@@ -487,7 +533,14 @@ botonComenzarjuego.addEventListener("click", (e) => {
     let nombreVerificar = "^[ a-zA-ZñÑáéíóúÁÉÍÓÚ]+$";
     let campoNombre = document.getElementById("textoNombre").value;
 
-    if (document.querySelector('input[id="radioKarateKidII"]:checked') || document.querySelector('input[id="radioKarateKid"]:checked') || document.querySelector('input[id="radioKarateKidIII"]:checked') && campoNombre != '') {
+    // --- CAMBIO: Validar idioma seleccionado ---
+    if (!idioma) {
+        textoModal = "Debe seleccionar un idioma";
+        modalPregunta(textoModal);
+        return;
+    }
+
+    if (document.querySelector('input[id="radioKarateKidII"]:checked') || document.querySelector('input[id="radioKarateKid"]:checked') || document.querySelector('input[id="radioKarateKidIII"]:checked') && campoNombre != '' || document.querySelector('input[id="radioCobraKai"]:checked') && campoNombre != '') {
         if (campoNombre != '') {
             if (campoNombre.match(nombreVerificar)) {
 
@@ -507,10 +560,18 @@ botonComenzarjuego.addEventListener("click", (e) => {
           
                 crearPanelpreguntas(boton, panel, jugadores);
 
-                preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta;
-                label1.innerText = nuevoArray[contPregunta].a;
-                label2.innerText = nuevoArray[contPregunta].b;
-                label3.innerText = nuevoArray[contPregunta].c;
+                // --- CAMBIO: Mostrar la primera pregunta y opciones según idioma ---
+                if (idioma === "en") {
+                    preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta_en;
+                    label1.innerText = nuevoArray[contPregunta].a_en;
+                    label2.innerText = nuevoArray[contPregunta].b_en;
+                    label3.innerText = nuevoArray[contPregunta].c_en;
+                } else {
+                    preguntaTitulo.innerText = nuevoArray[contPregunta].pregunta;
+                    label1.innerText = nuevoArray[contPregunta].a;
+                    label2.innerText = nuevoArray[contPregunta].b;
+                    label3.innerText = nuevoArray[contPregunta].c;
+                }
 
             } else {
                 textoModal = "Debe ingresar su nombre sin numeros o signos que no sean acentos";
@@ -520,7 +581,7 @@ botonComenzarjuego.addEventListener("click", (e) => {
             textoModal = "Debe ingresar su nombre";
             modalPregunta(textoModal);
         }
-    } else if (campoNombre != '' && !document.querySelector('input[id="radioKarateKidII"]:checked') && !document.querySelector('input[id="radioKarateKid"]:checked') && !document.querySelector('input[id="radioKarateKidIII"]:checked')) {
+    } else if (campoNombre != '' && !document.querySelector('input[id="radioKarateKidII"]:checked') && !document.querySelector('input[id="radioKarateKid"]:checked') && !document.querySelector('input[id="radioKarateKidIII"]:checked') && !document.querySelector('input[id="radioCobraKai"]:checked')) {
         textoModal = "Debe seleccionar una opción";
         modalPregunta(textoModal)
 

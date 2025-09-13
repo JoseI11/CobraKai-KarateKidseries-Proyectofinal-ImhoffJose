@@ -195,19 +195,6 @@
         "saga": "Karate Kid"
     },
     {
-        "pregunta": "¿Cual es el nombre del lugar en donde Daniel y Ali tienen su primera cita?",
-        "pregunta_en": "What is the name of the place where Daniel and Ali have their first date?",
-        "a": "Little Tokyo",
-        "a_en": "Little Tokyo",
-        "b": "Golf N' Stuff",
-        "b_en": "Golf N' Stuff",
-        "c": "OUE Skyspace",
-        "c_en": "OUE Skyspace",
-        "correcta": "b",
-        "orden": 16,
-        "saga": "Karate Kid"
-    },
-    {
         "pregunta": "¿Qué le dice el Sr. Miyagi a Daniel sobre la patada de la grulla antes del torneo?",
         "pregunta_en": "What does Mr. Miyagi tell Daniel about the Crane Kick before the tournament?",
         "a": "No debe ser usada a menos que el oponente lo merezca",

@@ -10,8 +10,6 @@ Incluye funcionalidades como galería de personajes, videos destacados, y por su
 - **HTML5**  
 - **CSS3 (Flexbox y Grid)**  
 - **JavaScript (DOM, eventos, funciones, localStorage)**  
-- **Bootstrap 5**  
-- **SweetAlert2**  
 - **Fetch API (simulación de base de datos con JSON)**
 
 ---
@@ -20,8 +18,6 @@ Incluye funcionalidades como galería de personajes, videos destacados, y por su
 
 ✔️ Galería dinámica de personajes de la serie  
 ✔️ Uso de `fetch()` para cargar datos desde JSON externo  
-✔️ Alerts personalizadas con SweetAlert2  
-✔️ Página "Nosotros", "Contacto", y más  
 
 ---
 
